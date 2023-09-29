@@ -6,7 +6,9 @@ const About = () => {
     <div className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
-          <h2 className='uppercase tracking-widest text-[#AD954C]'>About Me</h2>
+          <h2 className='uppercase tracking-widest text-[#AD954C] text-center'>
+            About Me
+          </h2>
           <p className='mt-4'>
             Hi there! 👋 I'm Saim Amir, and I bring a unique blend of
             professional engineering and management experience to the world of
