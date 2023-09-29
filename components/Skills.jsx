@@ -255,11 +255,7 @@ const Skills = () => {
               />
             </div>
           </div>
-          <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
-            <div>
-              <Image src={CypressLogo} width={75} height={75} alt='Cypress' />
-            </div>
-          </div>
+
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
               <Image src={GitLogo} width={75} height={75} alt='Cypress' />
