@@ -17,25 +17,25 @@ const Projects = () => {
           <ProjectItem
             title='BizConnect'
             backgroundImg={BizConnectImage}
-            projectUrl='/bizconnect'
+            projectUrl='/projects/bizconnect'
             tech='A full-stack professional social network developed using Node.js, Express, React, Redux, and MongoDB. '
           />
           <ProjectItem
             title='Scheduler'
             backgroundImg={SchedulerGif}
-            projectUrl='/scheduler'
+            projectUrl='/projects/scheduler'
             tech=' Interview Scheduler is a single-page application (SPA) built using JavaScript, React, and Axios that allows users to book technical interviews between students and mentors.'
           />
           <ProjectItem
             title='Tweeter'
             backgroundImg={TweeterGif}
-            projectUrl='/tweeter'
+            projectUrl='/projects/tweeter'
             tech='Tweeter is a Single Page App (SPA) built with HTML, CSS, JS, jQuery, and AJAX.'
           />
           <ProjectItem
             title='TinyURL'
             backgroundImg={TinyURLImage}
-            projectUrl='/tinyurl'
+            projectUrl='/projects/tinyurl'
             tech='TinyApp is a full stack web application built with Node, Express, and EJS that allows users to shorten long URLs (à la bit.ly).'
           />
         </div>
