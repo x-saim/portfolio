@@ -11,7 +11,7 @@ const Main = () => {
         {/* Project Link Container*/}
         <div className='uppercase max-w-[600px] rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest'>
           Check out my{' '}
-          <a href='#' className='font-semibold text-[#AD954C]'>
+          <a href='/#projects' className='font-semibold text-[#AD954C]'>
             Projects <span aria-hidden='true'>&rarr;</span>
           </a>
         </div>

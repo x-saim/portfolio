@@ -10,8 +10,8 @@ import Image from 'next/image';
 
 const Skills = () => {
   return (
-    <div id='skills' className='w-full lg:h-screen p-2'>
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center text-center h-full'>
+    <div id='skills' className='w-full lg:h-screen p-2 sm:pt-24 md:pt-24'>
+      <div className='max-w-[1920px] mx-auto flex flex-col justify-center text-center h-full'>
         <div className='flex justify-center items-center'>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />

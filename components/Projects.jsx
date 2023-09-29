@@ -4,20 +4,30 @@ import TweeterGif from '../public/assets/projects/Tweeter.gif';
 import SchedulerGif from '../public/assets/projects/Scheduler.gif';
 import TinyURLImage from '../public/assets/projects/TinyURL.png';
 import ProjectItem from './ProjectItem';
+import CodeLogo from '../public/assets/skills/div-coding-icon.png';
+import Image from 'next/image';
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full'>
-      <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#AD954C]'>
-          Projects
-        </p>
+    <div id='projects' className='w-full h-full-screen sm:pt-24 md:pt-24 '>
+      <div className='max-w-[1920px] mx-auto px-2 py-16'>
+        <div className='flex justify-center items-center'>
+          <span>
+            <Image src={CodeLogo} width={50} height={50} alt='Tag' />
+          </span>
+          <h2 className='uppercase ml-4 mr-4 tracking-widest text-[#AD954C]'>
+            Project Work
+          </h2>
+          <span>
+            <Image src={CodeLogo} width={50} height={50} alt='Tag' />
+          </span>
+        </div>
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='BizConnect'
             backgroundImg={BizConnectImage}
-            projectUrl='/projects/bizconnect'
+            projectUrl='https://github.com/x-saim/bizconnect'
             tech='A full-stack professional social network developed using Node.js, Express, React, Redux, and MongoDB. '
           />
           <ProjectItem
