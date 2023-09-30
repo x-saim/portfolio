@@ -10,7 +10,7 @@ import Image from 'next/image';
 const Projects = () => {
   return (
     <div id='projects' className='w-full h-full-screen sm:pt-24 md:pt-24 '>
-      <div className='max-w-[1920px] mx-auto px-2 py-16'>
+      <div className='max-w-[1920px] mx-auto px-2 py-16 justify-center text-center'>
         <div className='flex justify-center items-center'>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
@@ -22,22 +22,28 @@ const Projects = () => {
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
           </span>
         </div>
-        <h2 className='py-4 text-3xl font-semibold text-gray-800'>
-          Explore My Projects
-        </h2>
-
+        <p className='py-6  font-semibold text-gray-800 dark:text-gray-50'>
+          Welcome to my dynamic web portfolio, where I present a collection of
+          applications that showcase my mastery of full-stack and front-end
+          development. These projects seamlessly blend technology and
+          innovation, leveraging technologies like Node.js, Express, React,
+          Redux, MongoDB, JavaScript, Axios, HTML, CSS, jQuery, and AJAX. From a
+          global professional network to a streamlined interview scheduler and
+          real-time social interaction app, dive into my diverse skill set and
+          experience my commitment to crafting exceptional user experiences.
+        </p>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='BizConnect'
             backgroundImg={BizConnectImage}
             projectUrl='https://github.com/x-saim/bizconnect'
-            tech='A full-stack professional social network developed using Node.js, Express, React, Redux, and MongoDB. '
+            tech='BizConnect is a full-stack professional social network developed using Node.js, Express, React, Redux, and MongoDB. '
           />
           <ProjectItem
             title='Scheduler'
             backgroundImg={SchedulerGif}
             projectUrl='https://github.com/x-saim/scheduler'
-            tech=' Interview Scheduler is a single-page application (SPA) built using JavaScript, React, and Axios that allows users to book technical interviews between students and mentors.'
+            tech='Interview Scheduler is a single-page application (SPA) built using JavaScript, React, and Axios that allows users to book technical interviews between students and mentors.'
           />
           <ProjectItem
             title='Tweeter'

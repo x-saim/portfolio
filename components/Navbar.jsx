@@ -28,9 +28,10 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  //ecf0f3
   return (
     <div
-      style={{ backgroundColor: '#ecf0f3' }}
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
       className={
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100]'
@@ -43,7 +44,7 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul className='hidden md:flex'>
+          <ul className='hidden md:flex dark:text-white'>
             <Link href='/#home'>
               <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>

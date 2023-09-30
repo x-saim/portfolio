@@ -36,10 +36,10 @@ const Contact = () => {
   return (
     <div id='contact' className='isolate  px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl text-center'>
-        <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+        <h2 className='text-3xl font-bold tracking-tight text-[#AD954C] dark:text-gray-50 sm:text-4xl'>
           Contact Me!
         </h2>
-        <p className='mt-2 text-lg leading-8 text-gray-600'>
+        <p className='mt-2 text-lg leading-8 text-gray-600 dark:text-gray-50'>
           I am available for Full-Time or Freelance positions. Let's Connect!
         </p>
       </div>
@@ -62,7 +62,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor='first-name'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 First name
               </label>
@@ -80,7 +80,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor='last-name'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 Last name
               </label>
@@ -98,7 +98,7 @@ const Contact = () => {
             <div className='sm:col-span-2'>
               <label
                 htmlFor='subject'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 Subject
               </label>
@@ -116,7 +116,7 @@ const Contact = () => {
             <div className='sm:col-span-2'>
               <label
                 htmlFor='email'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 Email
               </label>
@@ -134,7 +134,7 @@ const Contact = () => {
             <div className='sm:col-span-2'>
               <label
                 htmlFor='phone-number'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 Phone number
               </label>
@@ -170,7 +170,7 @@ const Contact = () => {
             <div className='sm:col-span-2'>
               <label
                 htmlFor='message'
-                className='block text-sm font-semibold leading-6 text-gray-900'
+                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
               >
                 Message
               </label>
@@ -189,7 +189,7 @@ const Contact = () => {
           <div className='mt-10'>
             <button
               type='submit'
-              className='block w-full rounded-xl bg-yellow-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+              className='block w-full rounded-xl bg-[#AD954C] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
             >
               Send message!
             </button>
@@ -198,7 +198,7 @@ const Contact = () => {
       )}
       <div className='flex justify-center py-12'>
         <Link href='/#home'>
-          <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+          <div className='rounded-full bg-slate-100 shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <HiOutlineChevronDoubleUp className='text-[#AD954C]' size={30} />
           </div>
         </Link>
