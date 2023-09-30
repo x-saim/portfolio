@@ -42,7 +42,7 @@ const Projects = () => {
           <ProjectItem
             title='Tweeter'
             backgroundImg={TweeterGif}
-            projectUrl='/projects/tweeter'
+            projectUrl='https://github.com/x-saim/tweeter'
             tech='Tweeter is a Single Page App (SPA) built with HTML, CSS, JS, jQuery, and AJAX.'
           />
           <ProjectItem
