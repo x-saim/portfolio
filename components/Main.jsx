@@ -63,8 +63,8 @@ const Main = () => {
           </div>
         </div>
 
-        {/* Project Link Container*/}
-        <button
+        {/* Mail Link Container*/}
+        {/* <button
           className='uppercase max-w-[600px] bg-gray-600 text-white
          rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex hover:scale-110'
         >
@@ -75,7 +75,7 @@ const Main = () => {
             </span>
           </a>
           <div></div>
-        </button>
+        </button> */}
       </div>
     </div>
   );
