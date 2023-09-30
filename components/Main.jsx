@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Link from 'next/link';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai';
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
@@ -49,14 +49,33 @@ const Main = () => {
               </div>
             </a>
 
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
-              <AiOutlineMail />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
-              <BsFillPersonLinesFill />
-            </div>
+            <Link href='/#contact'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
+                <AiOutlineMail />
+              </div>
+            </Link>
+
+            <Link href='/#about'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
+                <BsFillPersonLinesFill />
+              </div>
+            </Link>
           </div>
         </div>
+
+        {/* Project Link Container*/}
+        <button
+          className='uppercase max-w-[600px] bg-gray-600 text-white
+         rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex'
+        >
+          Download Resume
+          <a href='/#' className='font-semibold'>
+            <span aria-hidden='true'>
+              <AiOutlineDownload className='mt-1' />
+            </span>
+          </a>
+          <div></div>
+        </button>
       </div>
     </div>
   );

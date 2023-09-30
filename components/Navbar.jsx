@@ -10,6 +10,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
+  //NavBar Shadow Toggler
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -55,6 +56,11 @@ const Navbar = () => {
             <Link href='/#projects'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Projects
+              </li>
+            </Link>
+            <Link href='/#experience'>
+              <li className='ml-10 text-sm uppercase hover:border-b'>
+                Experience
               </li>
             </Link>
             <Link href='/#contact'>
