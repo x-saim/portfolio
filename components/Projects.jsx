@@ -22,7 +22,10 @@ const Projects = () => {
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
           </span>
         </div>
-        <h2 className='py-4'>What I&apos;ve Built</h2>
+        <h2 className='py-4 text-3xl font-semibold text-gray-800'>
+          Explore My Projects
+        </h2>
+
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='BizConnect'
@@ -33,7 +36,7 @@ const Projects = () => {
           <ProjectItem
             title='Scheduler'
             backgroundImg={SchedulerGif}
-            projectUrl='/projects/scheduler'
+            projectUrl='https://github.com/x-saim/scheduler'
             tech=' Interview Scheduler is a single-page application (SPA) built using JavaScript, React, and Axios that allows users to book technical interviews between students and mentors.'
           />
           <ProjectItem
@@ -43,9 +46,9 @@ const Projects = () => {
             tech='Tweeter is a Single Page App (SPA) built with HTML, CSS, JS, jQuery, and AJAX.'
           />
           <ProjectItem
-            title='TinyURL'
+            title='TinyApp'
             backgroundImg={TinyURLImage}
-            projectUrl='/projects/tinyurl'
+            projectUrl='https://github.com/x-saim/tinyapp'
             tech='TinyApp is a full stack web application built with Node, Express, and EJS that allows users to shorten long URLs (à la bit.ly).'
           />
         </div>

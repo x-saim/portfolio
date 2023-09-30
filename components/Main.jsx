@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -29,16 +30,29 @@ const Main = () => {
 
           {/* Icons Container*/}
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaLinkedinIn />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaGithub />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://www.linkedin.com/in/saimamir/'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://github.com/x-saim '
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
+                <FaGithub />
+              </div>
+            </a>
+
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
               <AiOutlineMail />
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
               <BsFillPersonLinesFill />
             </div>
           </div>
