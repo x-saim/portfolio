@@ -23,7 +23,7 @@ const Main = () => {
             Hi, I'm <span className='text-[#AD954C]'>Saim</span>
           </h1>
           <h1 className='py-4 text-gray-700'>A Full-Stack Web Developer</h1>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
+          <p className='py-3 text-gray-600 max-w-[70%] m-auto text-lg'>
             Combining my engineering expertise with web and software development
             skills to deliver innovative solutions.
           </p>
@@ -66,9 +66,9 @@ const Main = () => {
         {/* Project Link Container*/}
         <button
           className='uppercase max-w-[600px] bg-gray-600 text-white
-         rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex'
+         rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex hover:scale-110'
         >
-          Download Resume
+          View Resume
           <a href='/#' className='font-semibold'>
             <span aria-hidden='true'>
               <AiOutlineDownload className='mt-1' />

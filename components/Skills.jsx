@@ -17,7 +17,7 @@ const Skills = () => {
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
           </span>
           <h2 className='uppercase ml-4 mr-4 tracking-widest text-[#AD954C]'>
-            Skills & Experience
+            Skills
           </h2>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
