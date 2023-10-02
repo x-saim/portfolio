@@ -31,10 +31,9 @@ const Navbar = () => {
   //ecf0f3
   return (
     <div
-      style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100]'
+          ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] dark:bg-gray-900'
           : 'fixed w-full h-20  z-[100]'
       }
     >
