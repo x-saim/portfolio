@@ -115,7 +115,7 @@ const Navbar = () => {
           {/* Menu List */}
           <div className='py-4 flex-col'>
             <ul className='uppercase'>
-              <Link href='/#home'>
+              <Link href='/#home' as='#home'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Home
                 </li>
