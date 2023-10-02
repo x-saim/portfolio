@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='sm:flex sm:items-center sm:justify-between'>
           <a href='/#home' className='flex items-center mb-4 sm:mb-0'>
             <Image
-              src='/assets/navLogo2.png'
+              src='public/assets/navLogo2.png'
               class='h-8 mr-3'
               alt='/'
               width={100}

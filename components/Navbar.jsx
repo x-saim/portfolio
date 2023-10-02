@@ -94,7 +94,7 @@ const Navbar = () => {
             {/* Top Bar of Menu */}
             <div className='flex w-full items-center justify-between'>
               <Image
-                src='/assets/navLogo2.png'
+                src='public/assets/navLogo2.png'
                 alt='/'
                 width='87'
                 height='35'
