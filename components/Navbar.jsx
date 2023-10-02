@@ -38,22 +38,22 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/#home'>
+        <Link href='/portfolio/#home'>
           <Image src='/assets/navLogo2.png' alt='/' width={125} height={50} />
         </Link>
 
         <div>
           <ul className='hidden md:flex dark:text-white'>
-            <Link href='/#home'>
+            <Link href='/portfolio/#home'>
               <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
-            <Link href='/#about'>
+            <Link href='/portfolio/#about'>
               <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
             </Link>
-            <Link href='/#skills'>
+            <Link href='/portfolio/#skills'>
               <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
             </Link>
-            <Link href='/#projects'>
+            <Link href='/portfolio/#projects'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Projects
               </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 Experience
               </li>
             </Link> */}
-            <Link href='/#contact'>
+            <Link href='/portfolio/#contact'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Contact
               </li>
@@ -115,27 +115,27 @@ const Navbar = () => {
           {/* Menu List */}
           <div className='py-4 flex-col'>
             <ul className='uppercase'>
-              <Link href='/#home'>
+              <Link href='/portfolio/#home'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Home
                 </li>
               </Link>
-              <Link href='/#about'>
+              <Link href='/portfolio/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/portfolio/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Skills
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/portfolio/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
                 </li>
               </Link>
-              <Link href='/#contact'>
+              <Link href='/portfolio/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
                 </li>

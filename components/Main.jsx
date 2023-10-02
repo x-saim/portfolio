@@ -12,7 +12,10 @@ const Main = () => {
         {/* Project Link Container*/}
         <div className='uppercase max-w-[600px] rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-50 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-50/10 dark:hover:ring-gray-50/20 tracking-widest'>
           Check out my{' '}
-          <a href='/#projects' className='font-semibold text-[#AD954C] '>
+          <a
+            href='/portfolio/#projects'
+            className='font-semibold text-[#AD954C] '
+          >
             Projects <span aria-hidden='true'>&rarr;</span>
           </a>
         </div>
@@ -51,13 +54,13 @@ const Main = () => {
               </div>
             </a>
 
-            <Link href='/#contact'>
+            <Link href='/portfolio/#contact'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
                 <AiOutlineMail />
               </div>
             </Link>
 
-            <Link href='/#about'>
+            <Link href='/portfolio/#about'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-[#AD954C]'>
                 <BsFillPersonLinesFill />
               </div>
@@ -71,7 +74,7 @@ const Main = () => {
          rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex hover:scale-110'
         >
           View Resume
-          <a href='/#' className='font-semibold'>
+          <a href='/portfolio/#' className='font-semibold'>
             <span aria-hidden='true'>
               <AiOutlineDownload className='mt-1' />
             </span>

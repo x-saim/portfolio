@@ -198,7 +198,7 @@ const Contact = () => {
         </form>
       )}
       <div className='flex justify-center py-12'>
-        <Link href='/#home'>
+        <Link href='/portfolio/#home'>
           <div className='rounded-full bg-slate-100 shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <HiOutlineChevronDoubleUp className='text-[#AD954C]' size={30} />
           </div>
