@@ -40,7 +40,8 @@ const Contact = () => {
           Contact Me!
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600 dark:text-gray-50'>
-          I am available for Full-Time or Freelance positions. Let's Connect!
+          I am available for Full-Time or Freelance positions. Let&apos;s
+          Connect!
         </p>
       </div>
 

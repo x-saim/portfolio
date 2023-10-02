@@ -33,10 +33,10 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='JavaScript'
               />
             </div>
@@ -44,10 +44,10 @@ const Skills = () => {
 
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Python'
               />
             </div>
@@ -55,41 +55,41 @@ const Skills = () => {
 
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Ruby'
               />
             </div>
           </div>
 
-          {/* <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
+          <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='TypeScript'
               />
             </div>
-          </div> */}
+          </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='HTML5'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='CSS3'
               />
             </div>
@@ -108,20 +108,20 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='React'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Next'
               />
             </div>
@@ -134,20 +134,20 @@ const Skills = () => {
 
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Node'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Express'
               />
             </div>
@@ -163,20 +163,20 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='PostgreSQL'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='MongoDB'
               />
             </div>
@@ -188,30 +188,30 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Mocha'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Jest'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Jest'
               />
             </div>
@@ -223,10 +223,10 @@ const Skills = () => {
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Rspec'
               />
             </div>
@@ -237,20 +237,20 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center'>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Figma'
               />
             </div>
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='VSCode'
               />
             </div>
@@ -268,10 +268,10 @@ const Skills = () => {
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <img
+              <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg'
-                width='75px'
-                height='75px'
+                width={75}
+                height={75}
                 alt='Photoshop'
               />
             </div>

@@ -13,11 +13,11 @@ const About = () => {
             About Me
           </h2>
           <p className='mt-4'>
-            Hi there! 👋 I'm Saim Amir, and I bring a unique blend of
+            Hi there! 👋 I&apos;m Saim Amir, and I bring a unique blend of
             professional engineering and management experience to the world of
             Full-Stack Web Development. With over 3+ years in the field of Civil
-            Engineering, I've honed my skills in problem-solving, project
-            management, and innovation. Now, I'm on an exciting journey to
+            Engineering, I&apos;ve honed my skills in problem-solving, project
+            management, and innovation. Now, I&apos;m on an exciting journey to
             become a versatile Full-Stack Web Developer.
           </p>
 
@@ -26,7 +26,7 @@ const About = () => {
           </h3>
           <p>
             My background in Civil Engineering has instilled in me a strong
-            foundation in critical thinking and attention to detail. I've
+            foundation in critical thinking and attention to detail. I&apos;ve
             transitioned into the world of web and software development, aiming
             to leverage my engineering expertise to create cutting-edge
             solutions.
@@ -34,18 +34,19 @@ const About = () => {
 
           <h3 className='uppercase py-4 mt-4'> Seeking New Horizons 🌅</h3>
           <p>
-            While I explore the vast landscape of web development, I'm also
+            While I explore the vast landscape of web development, I&apos;m also
             fascinated by the intersection of civil engineering and software
             development. This niche market holds immense potential for
-            innovation, and I'm excited to apply my cross-domain knowledge and
-            experience in this dynamic field.
+            innovation, and I&apos;m excited to apply my cross-domain knowledge
+            and experience in this dynamic field.
           </p>
           <h3 className='uppercase py-4 mt-4'>Join Me on this Journey 🤝</h3>
           <p>
-            I'm on the lookout for new adventures and full-time opportunities
-            where I can make a meaningful impact. Whether it's collaborating on
-            exciting projects or contributing to the growth of your team, I'm
-            ready to embark on this journey together.
+            I&apos;m on the lookout for new adventures and full-time
+            opportunities where I can make a meaningful impact. Whether
+            it&apos;s collaborating on exciting projects or contributing to the
+            growth of your team, I&apos;m ready to embark on this journey
+            together.
           </p>
         </div>
         <div>

@@ -58,11 +58,11 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link href='/#experience'>
+            {/* <Link href='/#experience'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Experience
               </li>
-            </Link>
+            </Link> */}
             <Link href='/#contact'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Contact
@@ -145,7 +145,7 @@ const Navbar = () => {
             {/* Social Icons Section */}
             <div className='pt-40 '>
               <p className='uppercase tracking-widest text-[#000000]'>
-                Let's Connect!
+                Let&apos;s Connect!
               </p>
 
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>

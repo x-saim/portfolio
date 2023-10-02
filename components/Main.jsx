@@ -20,7 +20,7 @@ const Main = () => {
         {/* Description Container*/}
         <div>
           <h1 className='py-4 text-gray-70 dark:text-gray-50'>
-            Hi, I'm <span className='text-[#AD954C] '>Saim</span>
+            Hi, I&apos;m <span className='text-[#AD954C] '>Saim</span>
           </h1>
           <h1 className='py-4 text-gray-700 dark:text-gray-50'>
             A Full-Stack Web Developer
