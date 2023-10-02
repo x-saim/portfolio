@@ -1,92 +1,123 @@
 import React from 'react';
-import '../styles/experience.css';
-function Experience() {
-  return (
-    <section style={{ backgroundColor: '#F0F2F5' }}>
-      <div class='container py-5'>
-        <div class='main-timeline'>
-          <div class='timeline left'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2017</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='timeline right'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2016</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='timeline left'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2015</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='timeline right'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2012</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='timeline left'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2011</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='timeline right'>
-            <div class='card'>
-              <div class='card-body p-4'>
-                <h3>2007</h3>
-                <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+
+const Experience = () => {
+  return <div>Experience</div>;
+};
 
 export default Experience;
+// import {
+//   VerticalTimeline,
+//   VerticalTimelineElement,
+// } from 'react-vertical-timeline-component';
+// import 'react-vertical-timeline-component/style.min.css';
+
+// import React from 'react';
+
+// const Experience = () => {
+//   return (
+//     <VerticalTimeline>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--work'
+//         contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+//         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+//         date='2011 - present'
+//         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+//         icon={<WorkIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>Creative Director</h3>
+//         <h4 className='vertical-timeline-element-subtitle'>Miami, FL</h4>
+//         <p>
+//           Creative Direction, User Experience, Visual Design, Project
+//           Management, Team Leading
+//         </p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--work'
+//         date='2010 - 2011'
+//         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+//         icon={<WorkIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>Art Director</h3>
+//         <h4 className='vertical-timeline-element-subtitle'>
+//           San Francisco, CA
+//         </h4>
+//         <p>
+//           Creative Direction, User Experience, Visual Design, SEO, Online
+//           Marketing
+//         </p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--work'
+//         date='2008 - 2010'
+//         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+//         icon={<WorkIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>Web Designer</h3>
+//         <h4 className='vertical-timeline-element-subtitle'>Los Angeles, CA</h4>
+//         <p>User Experience, Visual Design</p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--work'
+//         date='2006 - 2008'
+//         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+//         icon={<WorkIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>Web Designer</h3>
+//         <h4 className='vertical-timeline-element-subtitle'>
+//           San Francisco, CA
+//         </h4>
+//         <p>User Experience, Visual Design</p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--education'
+//         date='April 2013'
+//         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+//         icon={<SchoolIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>
+//           Content Marketing for Web, Mobile and Social Media
+//         </h3>
+//         <h4 className='vertical-timeline-element-subtitle'>Online Course</h4>
+//         <p>Strategy, Social Media</p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--education'
+//         date='November 2012'
+//         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+//         icon={<SchoolIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>
+//           Agile Development Scrum Master
+//         </h3>
+//         <h4 className='vertical-timeline-element-subtitle'>Certification</h4>
+//         <p>Creative Direction, User Experience, Visual Design</p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//         visible={true}
+//         className='vertical-timeline-element--education'
+//         date='2002 - 2006'
+//         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+//         icon={<SchoolIcon />}
+//       >
+//         <h3 className='vertical-timeline-element-title'>
+//           Bachelor of Science in Interactive Digital Media Visual Imaging
+//         </h3>
+//         <h4 className='vertical-timeline-element-subtitle'>Bachelor Degree</h4>
+//         <p>Creative Direction, Visual Design</p>
+//       </VerticalTimelineElement>
+//       <VerticalTimelineElement
+//       visible={true}
+//         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+//         icon={<StarIcon />}
+//       />
+//     </VerticalTimeline>
+//   );
+// };
+
+// export default Experience;
