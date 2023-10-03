@@ -94,10 +94,10 @@ const Navbar = () => {
             {/* Top Bar of Menu */}
             <div className='flex w-full items-center justify-between'>
               <Image
-                src='public/assets/navLogo2.png'
+                src='/assets/navLogo2.png'
                 alt='/'
-                width='87'
-                height='35'
+                width={87}
+                height={35}
               />
               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose onClick={handleNav} />
@@ -115,7 +115,7 @@ const Navbar = () => {
           {/* Menu List */}
           <div className='py-4 flex-col'>
             <ul className='uppercase'>
-              <Link href='/#home' as='#home'>
+              <Link href='/#home'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Home
                 </li>

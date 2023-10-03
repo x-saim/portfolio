@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>

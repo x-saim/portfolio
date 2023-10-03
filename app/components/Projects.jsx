@@ -1,10 +1,10 @@
 import React from 'react';
-import BizConnectImage from '../public/assets/projects/BizConnect.png';
-import TweeterGif from '../public/assets/projects/Tweeter.gif';
-import SchedulerGif from '../public/assets/projects/Scheduler.gif';
-import TinyURLImage from '../public/assets/projects/TinyURL.png';
+import BizConnectImage from '../../public/assets/projects/BizConnect.png';
+import TweeterGif from '../../public/assets/projects/Tweeter.gif';
+import SchedulerGif from '../../public/assets/projects/Scheduler.gif';
+import TinyURLImage from '../../public/assets/projects/TinyURL.png';
 import ProjectItem from './ProjectItem';
-import CodeLogo from '../public/assets/skills/div-coding-icon.png';
+import CodeLogo from '../../public/assets/skills/div-coding-icon.png';
 import Image from 'next/image';
 
 const Projects = () => {

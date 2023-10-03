@@ -1,11 +1,11 @@
 import React from 'react';
-import RubyOnRails from '../public/assets/skills/Ruby_On_Rails_Logo.svg.png';
-import CypressLogo from '../public/assets/skills/Cypress_Logo.png';
-import ReduxLogo from '../public/assets/skills/redux-icon.png';
-import SassLogo from '../public/assets/skills/sass-icon.png';
-import GitLogo from '../public/assets/skills/git-icon.png';
-import PostmanLogo from '../public/assets/skills/postman-icon.png';
-import CodeLogo from '../public/assets/skills/div-coding-icon.png';
+import RubyOnRails from '../../public/assets/skills/Ruby_On_Rails_Logo.svg.png';
+import CypressLogo from '../../public/assets/skills/Cypress_Logo.png';
+import ReduxLogo from '../../public/assets/skills/redux-icon.png';
+import SassLogo from '../../public/assets/skills/sass-icon.png';
+import GitLogo from '../../public/assets/skills/git-icon.png';
+import PostmanLogo from '../../public/assets/skills/postman-icon.png';
+import CodeLogo from '../../public/assets/skills/div-coding-icon.png';
 import Image from 'next/image';
 
 const Skills = () => {
