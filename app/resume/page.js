@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai';
 import Navbar from '../components/Navbar';
-import ResumeSkills from '../components/ResumeSkills';
+import ResumeSkills from '../components/resume/ResumeSkills';
 import ProfileCard from '../components/resume/ProfileCard';
 const Resume = () => {
   return (
@@ -54,6 +54,9 @@ const Resume = () => {
               </div>
 
               {/* Skills Block */}
+              <h3 className='p-7 flow-root bg-white rounded-xl shadow-md'>
+                Technical Skills
+              </h3>
               <ResumeSkills />
             </div>
 
