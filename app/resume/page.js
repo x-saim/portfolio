@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import Navbar from '../components/Navbar';
-
+import ResumeSkills from '../components/ResumeSkills';
 const Resume = () => {
   return (
     <>
@@ -30,7 +30,7 @@ const Resume = () => {
                 <div className='pt-10 p-3 bg-white shadow-md relative flex flex-col justify-center items-center'>
                   <Link href='/resume'>
                     <Image
-                      src='/assets/resume/profilepicture.jpg'
+                      src='/assets/resume/profilepicture.png'
                       alt='Avatar'
                       className='rounded-xl'
                       width={250}
@@ -79,7 +79,7 @@ const Resume = () => {
               </div>
 
               {/* Skills Block */}
-              <div className='p-7 flow-root bg-white rounded-xl shadow-md '>
+              {/* <div className='p-7 flow-root bg-white rounded-xl shadow-md '>
                 <h3>Technical Skills</h3>
                 <h3 className='mt-5 italic text-base'>Programming Langauges</h3>
                 <div className='-m-1 py-3 flex flex-wrap text-[#FCF6F5FF]'>
@@ -236,7 +236,8 @@ const Resume = () => {
                     Figma
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <ResumeSkills />
             </div>
 
             {/* Right Side */}
