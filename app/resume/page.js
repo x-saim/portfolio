@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 
 import Image from 'next/image';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import Navbar from '../components/Navbar';
 import ResumeSkills from '../components/ResumeSkills';
+import ProfileCard from '../components/resume/ProfileCard';
 const Resume = () => {
   return (
     <>
@@ -20,32 +20,7 @@ const Resume = () => {
             {/* Left Side */}
             <div className='space-y-5'>
               {/* User Block */}
-              <div className='shadow rounded-xl overflow-hidden'>
-                <div
-                  className='h-32 bg-cover'
-                  style={{
-                    backgroundImage: "url('/assets/resume/galaxy.jpeg')",
-                  }}
-                ></div>
-                <div className='pt-10 p-3 bg-white shadow-md relative flex flex-col justify-center items-center'>
-                  <Link href='/resume'>
-                    <Image
-                      src='/assets/resume/profilepicture.png'
-                      alt='Avatar'
-                      className='rounded-xl'
-                      width={250}
-                      height={250}
-                    />
-                  </Link>
-
-                  <div className='text-xl font-semibold mb-2 mt-2'>
-                    Saim Amir
-                  </div>
-                  <div className='text-md text-gray-400 mb-3'>
-                    Full Stack Developer
-                  </div>
-                </div>
-              </div>
+              <ProfileCard />
 
               {/* Info Block */}
               <div className='p-7 bg-white rounded-xl shadow-md'>
@@ -79,164 +54,6 @@ const Resume = () => {
               </div>
 
               {/* Skills Block */}
-              {/* <div className='p-7 flow-root bg-white rounded-xl shadow-md '>
-                <h3>Technical Skills</h3>
-                <h3 className='mt-5 italic text-base'>Programming Langauges</h3>
-                <div className='-m-1 py-3 flex flex-wrap text-[#FCF6F5FF]'>
-                  <div
-                    className='p-2 m-1 rounded-xl font-medium bg-[#990011FF]  
-                '
-                  >
-                    JavaScript
-                  </div>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Python
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    TypeScript
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Ruby
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    HTML
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    EJS
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    CSS
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    SASS
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    SQL
-                  </div>
-                </div>
-                <h3 className='mt-5 italic text-base'>Libraries/Frameworks</h3>
-                <div className='-m-1 py-3 flex flex-wrap'>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Node.js
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Express.js
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    React
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Redux
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    jQuery
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Axios
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    AJAX
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Ruby on Rails
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Mongoose
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Bootstrap
-                  </div>
-                </div>
-
-                <h3 className='mt-5 italic text-base'>Testing</h3>
-                <div className='-m-1 py-3 flex flex-wrap'>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Mocha
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Chai
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Jest
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Storybook
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Cypress
-                  </div>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Rspec
-                  </div>
-                </div>
-                <h3 className='mt-5 italic text-base'>Database Management</h3>
-                <div className='-m-1 py-3 flex flex-wrap'>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    PostgreSQL
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    MongoDB
-                  </div>
-                </div>
-                <h3 className='mt-5 italic text-base'>Development</h3>
-                <div className='-m-1 py-3 flex flex-wrap'>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Git
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Github
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Visual Studio Code
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Linux
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Postman
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Heroku
-                  </div>
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Vercel
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Netlify
-                  </div>
-
-                  <div className='p-2 m-1 rounded-xl bg-[#feda6d] text-black'>
-                    Figma
-                  </div>
-                </div>
-              </div> */}
               <ResumeSkills />
             </div>
 
