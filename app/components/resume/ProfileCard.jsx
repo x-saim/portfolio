@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const ProfileCard = () => {
   return (
-    <div className='flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-[#DCC7AA] dark:bg-gray-900 dark:text-gray-100'>
+    <div className='flex flex-col justify-center w-full p-6 shadow-md rounded-xl sm:px-15 bg-[#DCC7AA] dark:bg-gray-900 dark:text-gray-100'>
       <Link href='/#home'>
         <Image
           src='/assets/resume/profilepicture.png'
@@ -19,11 +19,11 @@ const ProfileCard = () => {
         <div className='my-2 space-y-1'>
           <h2 className='text-xl font-semibold sm:text-2xl'>Saim Amir</h2>
           <p className='px-5 text-xs sm:text-base dark:text-gray-400'>
-            Full-Stack Developer
+            Full-Stack Developer | Civil E.I.T
           </p>
         </div>
         <div className='flex justify-center pt-2 space-x-4 align-center'>
-          <a
+          <Link
             rel='noopener noreferrer'
             href='https://github.com/x-saim'
             aria-label='GitHub'
@@ -31,11 +31,11 @@ const ProfileCard = () => {
           >
             <Image
               src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-              width={15}
-              height={15}
+              width={30}
+              height={30}
               alt='/'
             />
-          </a>
+          </Link>
           <Link
             rel='noopener noreferrer'
             href='https://www.linkedin.com/in/saimamir/'
@@ -44,8 +44,8 @@ const ProfileCard = () => {
           >
             <Image
               src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg'
-              width={15}
-              height={15}
+              width={30}
+              height={30}
               alt='/'
             />
           </Link>
@@ -55,14 +55,14 @@ const ProfileCard = () => {
             aria-label='Medium'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
           >
-            <AiFillMediumSquare width={25} height={25} />
+            <AiFillMediumSquare size={30} />
           </Link>
           <Link
             href='mailto:saimxamir@gmail.com'
             aria-label='Email'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
           >
-            <FiMail />
+            <FiMail size={30} />
           </Link>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-
 import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import ResumeSkills from '../components/resume/ResumeSkills';
 import ProfileCard from '../components/resume/ProfileCard';
+import ExperienceCard from '../components/resume/ExperienceCard';
 const Resume = () => {
   return (
     <>
@@ -65,17 +65,17 @@ const Resume = () => {
               {/* About Me Block */}
               <div className='p-7 pb-0 bg-white rounded-xl shadow-md'>
                 <h3 className=''>About me</h3>
-                <p className='text-gray-600 mb-1 py-2'>
+                <p className='text-black dark:text-white mb-1 py-2'>
                   Experienced civil engineer-in-training with over 3 years of
                   experience, now looking to transition into full-stack web
                   development.
                 </p>
-                <p className='text-gray-600 mb-1 py-2'>
+                <p className='text-black dark:text-white mb-1 py-2'>
                   Proficient in JavaScript, React, Node.js, Express.js, SQL, and
                   various other technologies. I combine my engineering expertise
                   with web development skills to deliver innovative solutions.
                 </p>
-                <p className='text-gray-600 mb-5'>
+                <p className='text-black dark:text-white mb-5'>
                   I am a meticulous problem solver, approaching challenges with
                   a user-centric mindset. I am dedicated to continuously
                   updating my knowledge with the latest emerging technologies to
@@ -110,7 +110,7 @@ const Resume = () => {
               </div>
 
               {/* Experience Block */}
-              <div className='p-7 bg-white rounded-xl shadow-md'>
+              {/* <div className='p-7 bg-white rounded-xl shadow-md'>
                 <h3 className='text-md'>Experience</h3>
                 <div className='mb-5 flex mt-5 '>
                   <div className='pr-5 '>
@@ -245,7 +245,8 @@ const Resume = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <ExperienceCard />
             </div>
           </div>
         </main>

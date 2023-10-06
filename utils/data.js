@@ -36,6 +36,37 @@ const TechnicalSkills = {
     'Figma',
   ],
 };
+const ExperienceSections = {
+  exp1: {
+    company: 'Engineering Link Inc.',
+    companyURL: 'https://www.engineeringlink.ca/',
+    logo: '/assets/resume/EngLink.png',
+    title: 'Engineer-in-Training',
+    date: 'May 2021 - March 2023',
+    description: [
+      'Effectively managed up to 20 diverse projects simultaneously, with budgets ranging from $100,000 to $10 million, in various sectors such as commercial, institutional, industrial, and residential.',
+      ' Managed full project life cycles with meticulous oversight, encompassing site investigations, comprehensive condition assessments, design and tender processes, as well as construction review and contract administration.',
+      'Utilized Python for data processing and in-depth analysis, achieving a 90% time reduction and $2000 cost savings for a curtain wall glazing survey. This analysis contributed to a comprehensive repairs strategy plan summary',
+      'Proactively addressed potential project challenges, leading to significant cost savings of $100,000 in repairs and preventing a 3-month extension to the project schedule, successfully meeting   client expectations.',
+      'Effectively engineered and developed project scope and design requirements for diverse restoration projects, including roofing systems, reinforced concrete parking garages, waterproofing, exterior walls, and windows.',
+    ],
+  },
+  exp2: {
+    company: 'Sobotec Ltd.',
+    companyURL: 'https://sobotec.com/',
+    logo: '/assets/resume/Sobotec_Logo.png',
+    title: 'Structural Engineering Intern',
+    date: 'May 2018 - August 2019',
+    description: [
+      'Demonstrated expertise in design codes and standards, including ASD, IBC, ASCE 7, ADM, LSD, NBCC, OBC, and NASPEC, to conduct connection design of aluminum exterior wall cladding panel systems in the USA and Canada.',
+      'Demonstrated expertise in design codes and standards, including ASD, IBC, ASCE 7, ADM, LSD, NBCC, OBC, and NASPEC, to conduct connection design of aluminum exterior wall cladding panel systems in the USA and Canada.',
+      'Managed a portfolio of up to 15 projects, effectively prioritizing tasks, adhering to project timelines, and consistently delivering on all project requirements.',
+      'Proactively addressed potential project challenges, leading to significant cost savings of $100,000 in repairs and preventing a 3-month extension to the project schedule, successfully meeting   client expectations.',
+      'Reviewed and revised structural drawings with meticulous attention to detail using AutoCAD, ensuring precise accuracy and adherence to project specifications.',
+    ],
+  },
+};
 module.exports = {
   TechnicalSkills,
+  ExperienceSections,
 };
