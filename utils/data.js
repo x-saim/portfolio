@@ -66,7 +66,45 @@ const ExperienceSections = {
     ],
   },
 };
+
+const ProjectData = {
+  project1: {
+    title: 'BizConnect',
+    link: 'https://github.com/x-saim/bizconnect',
+    techStack: 'JavaScript, Node.js, Express, React, Redux, MongoDB',
+    date: 'September 2023',
+    description: [
+      'Developed a full-stack professional networking application utilizing Node.js, Express, React, Redux, and MongoDB.',
+      'Implemented route protection with JSON Web Tokens (JWT) and conducted thorough API testing with Postman.',
+      'Utilized Redux, React Hooks, and Async/Await for efficient state management and code optimization. Designed and integrated reducers, actions, and container components for seamless Redux integration.',
+    ],
+  },
+  project2: {
+    title: 'Scheduler',
+    techStack: 'JavaScript, Node.js, React, Axios, PostgreSQL, HTML/CSS',
+    link: 'https://github.com/x-saim/scheduler',
+    date: 'August 2023',
+    description: [
+      'Developed a full-stack application using Node.js and React to create an interview booking and cancellation system.',
+      'Implemented asynchronous Axios requests for seamless storage, smooth data fetching, and optimized communication.',
+      'Ensured application reliability and maintainability with comprehensive testing, including Jest for unit testing, Storybook for isolated component testing, and Cypress for end-to-end testing.',
+    ],
+  },
+  project3: {
+    title: 'QuizApp',
+    link: 'https://github.com/stoofz/quizApp',
+    techStack: 'JavaScript, Node.js, Express.js, PostgreSQL, HTML/SASS',
+    date: 'July 2023',
+    description: [
+      'Spearheaded the development of a full-stack multi-page web application for users to create and share quizzes.',
+      'Effectively collaborated in a cohesive team using Git to streamline coordination and optimize project efficiency.',
+      'Prioritized data security by implementing user authentication and password encryption using bcrypt.',
+    ],
+  },
+};
+
 module.exports = {
   TechnicalSkills,
   ExperienceSections,
+  ProjectData,
 };

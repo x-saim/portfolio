@@ -1,6 +1,10 @@
 import React from 'react';
 import { FiMail } from 'react-icons/fi';
-import { AiFillMediumSquare } from 'react-icons/ai';
+import {
+  AiFillMediumSquare,
+  AiFillGithub,
+  AiFillLinkedin,
+} from 'react-icons/ai';
 import Link from 'next/link';
 import Image from 'next/image';
 const ProfileCard = () => {
@@ -25,32 +29,25 @@ const ProfileCard = () => {
         <div className='flex justify-center pt-2 space-x-4 align-center'>
           <Link
             rel='noopener noreferrer'
+            target='_blank'
             href='https://github.com/x-saim'
             aria-label='GitHub'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
           >
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-              width={30}
-              height={30}
-              alt='/'
-            />
+            <AiFillGithub size={30} />
           </Link>
           <Link
             rel='noopener noreferrer'
+            target='_blank'
             href='https://www.linkedin.com/in/saimamir/'
             aria-label='Linkedin'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
           >
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg'
-              width={30}
-              height={30}
-              alt='/'
-            />
+            <AiFillLinkedin size={30} />
           </Link>
           <Link
             rel='noopener noreferrer'
+            target='_blank'
             href='https://medium.com/@saimxamir'
             aria-label='Medium'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
@@ -59,6 +56,7 @@ const ProfileCard = () => {
           </Link>
           <Link
             href='mailto:saimxamir@gmail.com'
+            target='_blank'
             aria-label='Email'
             className='p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400'
           >
