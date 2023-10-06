@@ -6,7 +6,7 @@ const ExperienceCard = () => {
   const renderExperience = () => {
     return (
       <>
-        <div className='p-7 bg-[#DCC7AA] rounded-xl shadow-md'>
+        <div className='p-7 bg-white rounded-xl shadow-md'>
           <h3 className='text-md'>Experience</h3>
           {Object.entries(ExperienceSections).map(([subExp, subSection]) => (
             <div key={subExp} className='mb-5 flex mt-5'>
@@ -36,6 +36,14 @@ const ExperienceCard = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className='text-gray-600'>
+                  <ul style={{ listStyleType: 'disc' }}></ul>
+                  {subSection['description'].map((point) => (
+                    <li key={point} className='py-2'>
+                      {point}
+                    </li>
+                  ))}
                 </div>
               </div>
             </div>

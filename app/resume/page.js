@@ -54,9 +54,7 @@ const Resume = () => {
               </div>
 
               {/* Skills Block */}
-              <h3 className='p-7 flow-root bg-white rounded-xl shadow-md'>
-                Technical Skills
-              </h3>
+
               <ResumeSkills />
             </div>
 
