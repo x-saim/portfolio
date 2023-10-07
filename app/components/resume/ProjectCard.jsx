@@ -13,15 +13,6 @@ const ProjectCard = () => {
           </h3>
           {Object.entries(ProjectData).map(([projectId, project]) => (
             <div key={projectId} className='mb-5 flex mt-5'>
-              {/* <div className='pr-5'>
-                <Image
-                  src={project.logo}
-                  width={75}
-                  height={75}
-                  alt={project.title}
-                  className='rounded-xl'
-                />
-              </div> */}
               <div className='w-full space-y-2 pl-3'>
                 <div className='flex justify-between'>
                   <div>
@@ -44,7 +35,7 @@ const ProjectCard = () => {
                   </div>
                 </div>
                 <div>
-                  <p className='text-md italic text-[#990011FF]'>
+                  <p className='text-md italic font-semibold text-[#990011FF]'>
                     {project.techStack}
                   </p>
                 </div>

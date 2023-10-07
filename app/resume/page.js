@@ -13,10 +13,17 @@ const Resume = () => {
   return (
     <>
       <ViewMode />
-      <div className='flex items-center pl-3 space-x-1 pt bg-gray-400 rounded-t-xl h-7'>
+      <div className='flex items-center pl-3 space-x-2 pt bg-gray-400 rounded-t-xl h-10'>
         <span className='w-2 h-2 bg-white rounded-full'></span>
         <span className='w-2 h-2 bg-white rounded-full'></span>
         <span className='w-2 h-2 bg-white rounded-full'></span>
+        <span>
+          <Link href='/#home'>
+            <div className='ml-1 text-sm uppercase bg-white rounded-xl p-1 hover:border-b'>
+              Home
+            </div>
+          </Link>
+        </span>
       </div>
       <div className='bg-gray-100 antialiased '>
         <main className='main-container py-5 ml-4 mr-4'>
