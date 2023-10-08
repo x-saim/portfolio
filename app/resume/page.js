@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai';
-// import Navbar from '../components/Navbar';
 import ResumeSkills from '../components/resume/ResumeSkills';
 import ProfileCard from '../components/resume/ProfileCard';
 import ExperienceCard from '../components/resume/ExperienceCard';
@@ -13,6 +12,7 @@ const Resume = () => {
   return (
     <>
       <ViewMode />
+
       <div className='flex items-center pl-3 space-x-2 pt bg-gray-400 rounded-t-xl h-10'>
         <span className='w-2 h-2 bg-white rounded-full'></span>
         <span className='w-2 h-2 bg-white rounded-full'></span>

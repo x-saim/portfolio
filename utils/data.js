@@ -120,10 +120,10 @@ const navLinks = [
     name: 'Skills',
     hash: '#skills',
   },
-  // {
-  //   name: 'Experience',
-  //   hash: '#experience',
-  // },
+  {
+    name: 'Resume',
+    hash: 'resume',
+  },
   {
     name: 'Contact',
     hash: '#contact',
