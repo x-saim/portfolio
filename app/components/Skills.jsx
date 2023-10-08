@@ -64,7 +64,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
+          {/* <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
               <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
@@ -73,7 +73,7 @@ const Skills = () => {
                 alt='TypeScript'
               />
             </div>
-          </div>
+          </div> */}
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
               <Image

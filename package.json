@@ -21,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "framer-motion": "^10.16.4",
     "heroicons": "^2.0.18",
     "mdb-ui-kit": "^6.4.2",
     "next": "^13.5.3",
