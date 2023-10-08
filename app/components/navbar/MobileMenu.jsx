@@ -4,13 +4,9 @@ import Link from 'next/link';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineClose } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
-const MobileMenu = ({ isOpen, onClose }) => {
-  const handleLinkClick = () => {
-    onClose(); // Close the mobile menu when a link is clicked
-  };
-
+const MobileMenu = ({ isOpen, onClose, handleNav }) => {
   return (
     <div
       className={`fixed left-0 top-0 w-full h-screen bg-black/70 ${

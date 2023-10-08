@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Main from './components/Main';
 import About from './components/About';
 import Skills from './components/Skills';

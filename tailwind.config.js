@@ -9,6 +9,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      // screens: {
+      //   sm: '640px',
+      // },
     },
   },
   plugins: [],
