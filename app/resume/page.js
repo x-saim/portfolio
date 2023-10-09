@@ -19,7 +19,7 @@ const Resume = () => {
         <span className='w-2 h-2 bg-white rounded-full'></span>
         <span>
           <Link href='/#home'>
-            <div className='ml-1 text-sm uppercase bg-white rounded-xl p-1 hover:border-b'>
+            <div className='ml-1 text-sm uppercase bg-white dark:text-gray-900 rounded-xl p-1 hover:border-b'>
               Home
             </div>
           </Link>

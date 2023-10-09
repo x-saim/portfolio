@@ -21,10 +21,6 @@ const Navbar = () => {
     setMenuIcon(!menuIcon);
   };
 
-  // const handleMenuIcon = () => {
-  //   setMenuIcon(!menuIcon);
-  // };
-
   // Function to add styles to navigation links
   const addStylesToNavLinks = (link) => {
     const isActive = link.name === activeSection;
@@ -91,104 +87,96 @@ const Navbar = () => {
           )}
         </div>
       </header>
-      {/* sm:w-[60%] md:w-[45%] */}
 
       {/* Menu Sidebar */}
       <div
         className={
           navOpen
-            ? ' fixed left-0 top-0 h-screen w-full bg-[#ecf0f3] p-10 ease-in duration-500 z-[998]'
+            ? ' fixed left-0 top-0 h-screen w-full bg-[#ecf0f3] dark:bg-gray-900 p-10 ease-in duration-500 z-[998]'
             : 'fixed left-[-100%] ease-out duration-500'
         }
       >
         <div>
           <div className='flex w-full items-center justify-between'>
-            <Link href='/'>
-              <Image src={NavLogo} width='87' height='35' alt='/' />
-            </Link>
-            {/* <div
-              onClick={handleNav}
-              className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
-            >
-              <AiOutlineClose />
-            </div> */}
+            {/* <Link href='/'>
+              <Image src={NavLogo} width={'100'} height='35' alt='/' />
+            </Link> */}
           </div>
-          <div className='border-b border-gray-300 my-4'>
-            <p className='w-[85%] md:w-[90%] py-4'>
-              Welcome to my portfolio website!
+          <div className='border-b border-gray-300 mt-[100px]'>
+            <p className='w-full py-4 text-center text-2xl uppercase'>
+              Welcome to my Portfolio Website!
             </p>
           </div>
         </div>
-        <div className='py-4 flex flex-col'>
-          <ul className='uppercase'>
+        <div className='py-4 flex flex-col text-center justify-center'>
+          <ul className='uppercase py-4 text-3xl'>
             <Link href='/#home'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 Home
               </li>
             </Link>
             <Link href='/#about'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 About
               </li>
             </Link>
             <Link href='/#skills'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 Skills
               </li>
             </Link>
             <Link href='/#projects'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 Projects
               </li>
             </Link>
             <Link href='/resume'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 Resume
               </li>
             </Link>
             <Link href='/#contact'>
-              <li onClick={() => setNavOpen(false)} className='py-4 text-sm'>
+              <li className='py-4' onClick={handleNav}>
                 Contact
               </li>
             </Link>
           </ul>
-          <div className='pt-40'>
+          {/* Footer Container*/}
+          <div className='pt-30'>
             <p className='uppercase tracking-widest text-[#5651e5]'>
               Let&#39;s Connect
             </p>
-            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+
+            {/* Icons Container*/}
+            <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
               <Link
+                target='_blank'
+                rel='noopener noreferrer'
                 href='https://www.linkedin.com/in/saimamir/'
-                target='_blank'
-                rel='noreferrer'
               >
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                  <FaLinkedinIn size={25} />
                 </div>
               </Link>
               <Link
-                href='https://github.com/x-saim'
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
+                href='https://github.com/x-saim '
               >
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                  <FaGithub size={25} />
                 </div>
               </Link>
+
               <Link href='/#contact'>
-                <div
-                  onClick={() => setNavOpen(!navOpen)}
-                  className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                >
-                  <AiOutlineMail />
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                  <AiOutlineMail size={25} />
                 </div>
               </Link>
-              <Link href='/resume'>
-                <div
-                  onClick={() => setNavOpen(!navOpen)}
-                  className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                >
-                  <BsFillPersonLinesFill />
+
+              <Link href='/#about'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                  <BsFillPersonLinesFill size={25} />
                 </div>
               </Link>
             </div>
