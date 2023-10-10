@@ -1,11 +1,8 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { navLinks } from '@/utils/data';
-import MobileMenu from './MobileMenu';
-import NavLogo from '../../../public/assets/navLogo2.png';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -57,9 +54,7 @@ const Navbar = () => {
       </motion.li>
     );
   };
-  //
 
-  // 'flex fixed left-[80%] top-12 ease-in duration-400 dark:bg-gray-950 bg-gray-200 border-2 border-black  z-[999] rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
   return (
     <>
       <header className='z-[999] relative'>
@@ -93,15 +88,11 @@ const Navbar = () => {
         className={
           navOpen
             ? ' fixed left-0 top-0 h-screen w-full bg-[#ecf0f3] dark:bg-gray-900 p-10 ease-in duration-500 z-[998]'
-            : 'fixed left-[-100%] ease-out duration-500'
+            : 'fixed  left-[-150%] ease-out duration-500'
         }
       >
         <div>
-          <div className='flex w-full items-center justify-between'>
-            {/* <Link href='/'>
-              <Image src={NavLogo} width={'100'} height='35' alt='/' />
-            </Link> */}
-          </div>
+          <div className='flex w-full items-center justify-between'></div>
           <div className='border-b border-gray-300 mt-[100px]'>
             <p className='w-full py-4 text-center text-2xl uppercase'>
               Welcome to my Portfolio Website!
@@ -169,13 +160,19 @@ const Navbar = () => {
               </Link>
 
               <Link href='/#contact'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
+                  onClick={handleNav}
+                >
                   <AiOutlineMail size={25} />
                 </div>
               </Link>
 
               <Link href='/#about'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                <div
+                  className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
+                  onClick={handleNav}
+                >
                   <BsFillPersonLinesFill size={25} />
                 </div>
               </Link>

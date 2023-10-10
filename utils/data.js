@@ -113,12 +113,12 @@ const navLinks = [
     hash: '#about',
   },
   {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
     name: 'Skills',
     hash: '#skills',
+  },
+  {
+    name: 'Projects',
+    hash: '#projects',
   },
   {
     name: 'Resume',
