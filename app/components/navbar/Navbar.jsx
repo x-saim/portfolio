@@ -94,47 +94,47 @@ const Navbar = () => {
         <div>
           <div className='flex w-full items-center justify-between'></div>
           <div className='border-b border-gray-300 mt-[100px]'>
-            <p className='w-full py-4 text-center text-2xl uppercase'>
-              Welcome to my Portfolio Website!
+            <p className='w-full py-4 text-center text-2xl uppercase text-[#AD954C]'>
+              Welcome to my Portfolio!
             </p>
           </div>
         </div>
         <div className='py-4 flex flex-col text-center justify-center'>
-          <ul className='uppercase py-4 text-3xl'>
+          <ul className='uppercase py-4 text-2xl'>
             <Link href='/#home'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 Home
               </li>
             </Link>
             <Link href='/#about'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 About
               </li>
             </Link>
             <Link href='/#skills'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 Skills
               </li>
             </Link>
             <Link href='/#projects'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 Projects
               </li>
             </Link>
             <Link href='/resume'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 Resume
               </li>
             </Link>
             <Link href='/#contact'>
-              <li className='py-4' onClick={handleNav}>
+              <li className='py-3' onClick={handleNav}>
                 Contact
               </li>
             </Link>
           </ul>
           {/* Footer Container*/}
           <div className='pt-30'>
-            <p className='uppercase tracking-widest text-[#5651e5]'>
+            <p className='uppercase tracking-widest text-[#AD954C] text-2xl font-semibold'>
               Let&#39;s Connect
             </p>
 
@@ -145,7 +145,7 @@ const Navbar = () => {
                 rel='noopener noreferrer'
                 href='https://www.linkedin.com/in/saimamir/'
               >
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
                   <FaLinkedinIn size={25} />
                 </div>
               </Link>
@@ -154,14 +154,14 @@ const Navbar = () => {
                 rel='noopener noreferrer'
                 href='https://github.com/x-saim '
               >
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'>
                   <FaGithub size={25} />
                 </div>
               </Link>
 
               <Link href='/#contact'>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
+                  className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
                   onClick={handleNav}
                 >
                   <AiOutlineMail size={25} />
@@ -170,7 +170,7 @@ const Navbar = () => {
 
               <Link href='/#about'>
                 <div
-                  className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
+                  className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300 text-gray-700 dark:text-white'
                   onClick={handleNav}
                 >
                   <BsFillPersonLinesFill size={25} />

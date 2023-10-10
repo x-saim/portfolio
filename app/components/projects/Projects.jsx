@@ -10,29 +10,32 @@ import Image from 'next/image';
 const Projects = () => {
   return (
     <div id='projects' className='w-full h-full-screen sm:pt-24 md:pt-24 '>
-      <div className='max-w-[1920px] mx-auto px-2 py-16 justify-center text-center'>
+      <div className='max-w-[1920px] mx-auto px-6 py-10 justify-center'>
         <div className='flex justify-center items-center'>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
           </span>
-          <h2 className='uppercase ml-4 mr-4 tracking-widest text-[#AD954C]'>
+          <h2 className='uppercase ml-4 mr-4 tracking-widest text-[#AD954C] text-center'>
             Project Work
           </h2>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
           </span>
         </div>
-        <p className='py-6  font-semibold text-gray-800 dark:text-gray-50'>
-          Welcome to my dynamic web portfolio, where I present a collection of
-          applications that showcase my mastery of full-stack and front-end
-          development. These projects seamlessly blend technology and
-          innovation, leveraging technologies like Node.js, Express, React,
-          Redux, MongoDB, JavaScript, Axios, HTML, CSS, jQuery, and AJAX. From a
-          global professional network to a streamlined interview scheduler and
-          real-time social interaction app, dive into my diverse skill set and
-          experience my commitment to crafting exceptional user experiences.
+        <p className='p-2 text-gray-800 dark:text-gray-50'>
+          Welcome to my web portfolio, where I present a collection of
+          applications that highlight my expertise in both full-stack and
+          front-end development.
         </p>
-        <div className='grid md:grid-cols-2 gap-8'>
+        <p className='p-2 text-gray-800 dark:text-gray-50'>
+          These projects seamlessly blend technology and creativity, utilizing
+          tools like Node.js, Express, React, Redux, MongoDB, JavaScript, Axios,
+          HTML, CSS, jQuery, and AJAX. From a global professional network to a
+          streamlined interview scheduler and real-time social interaction app,
+          explore my diverse skill set and experience my commitment to crafting
+          exceptional user experiences.
+        </p>
+        <div className='grid md:grid-cols-2 gap-8 py-5'>
           <ProjectItem
             title='BizConnect'
             backgroundImg={BizConnectImage}

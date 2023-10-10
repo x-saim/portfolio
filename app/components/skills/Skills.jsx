@@ -1,17 +1,10 @@
 import React from 'react';
-import RubyOnRails from '../../public/assets/skills/Ruby_On_Rails_Logo.svg.png';
-import CypressLogo from '../../public/assets/skills/Cypress_Logo.png';
-import ReduxLogo from '../../public/assets/skills/redux-icon.png';
-import SassLogo from '../../public/assets/skills/sass-icon.png';
-import GitLogo from '../../public/assets/skills/git-icon.png';
-import PostmanLogo from '../../public/assets/skills/postman-icon.png';
-import CodeLogo from '../../public/assets/skills/div-coding-icon.png';
+import CodeLogo from 'public/assets/skills/div-coding-icon.png';
 import Image from 'next/image';
-
 const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2 sm:pt-24 md:pt-24'>
-      <div className='max-w-[1920px] mx-auto flex flex-col justify-center text-center h-full'>
+      <div className='max-w-[1920px] mx-auto py-10 flex flex-col justify-center text-center h-full'>
         <div className='flex justify-center items-center'>
           <span>
             <Image src={CodeLogo} width={50} height={50} alt='Tag' />
@@ -24,8 +17,8 @@ const Skills = () => {
           </span>
         </div>
         <p className='py-4'>
-          The main area of my expertise is full-stack development - both client
-          and server side technologies.
+          The main area of my expertise is full-stack development - tackling
+          both client and server side technologies.
         </p>
 
         {/* Icons */}
@@ -96,7 +89,7 @@ const Skills = () => {
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <Image src={SassLogo} width={75} height={75} alt='Rails' />
+              <Image src={SassLogo} width={75} height={75} alt='Sass' />
             </div>
           </div>
         </div>
@@ -154,7 +147,7 @@ const Skills = () => {
           </div>
           <div className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'>
             <div>
-              <Image src={ReduxLogo} width={75} height={75} alt='Cypress' />
+              <Image src={ReduxLogo} width={75} height={75} alt='Redux' />
             </div>
           </div>
         </div>
@@ -212,7 +205,7 @@ const Skills = () => {
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg'
                 width={75}
                 height={75}
-                alt='Jest'
+                alt='Storybook'
               />
             </div>
           </div>
