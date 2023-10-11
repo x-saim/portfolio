@@ -1,11 +1,3 @@
-import RubyOnRails from 'public/assets/skills/Ruby_On_Rails_Logo.svg.png';
-import CypressLogo from 'public/assets/skills/Cypress_Logo.png';
-import ReduxLogo from 'public/assets/skills/redux-icon.png';
-import SassLogo from 'public/assets/skills/sass-icon.png';
-import GitLogo from 'public/assets/skills/git-icon.png';
-import PostmanLogo from 'public/assets/skills/postman-icon.png';
-import SQLLogo from 'public/assets/skills/database.png';
-
 const TechnicalSkills = {
   'Programming Languages': [
     'JavaScript',
@@ -143,15 +135,11 @@ const skillsData = {
     {
       name: 'JavaScript',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-      width: 50,
-      height: 50,
       alt: 'JavaScript',
     },
     {
       name: 'Python',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Python',
     },
     // {
@@ -164,36 +152,26 @@ const skillsData = {
     {
       name: 'Ruby',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Ruby',
     },
     {
       name: 'HTML5',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'HTML5',
     },
     {
       name: 'CSS3',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'CSS3',
     },
     {
       name: 'Sass',
-      src: { SassLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/sass-icon.png',
       alt: 'Sass',
     },
     {
       name: 'SQL',
-      src: { SQLLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/database.png',
       alt: 'SQL',
     },
   ],
@@ -201,50 +179,36 @@ const skillsData = {
     {
       name: 'Node.js',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Node.js',
     },
     {
       name: 'Express.js',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Express.js',
     },
     {
       name: 'React',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'React',
     },
     {
       name: 'React',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Next',
     },
     {
       name: 'Redux',
-      src: { ReduxLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/redux-icon.png',
       alt: 'Redux',
     },
     {
       name: 'jQuery',
-      src: 'assets/skills/jquery-icon.png',
-      width: 50,
-      height: 50,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
       alt: 'jQuery',
     },
     {
       name: 'Ruby on Rails',
-      src: { RubyOnRails },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/Ruby_On_Rails_Logo.svg.png',
       alt: 'Rails',
     },
   ],
@@ -252,15 +216,11 @@ const skillsData = {
     {
       name: 'PostgreSQL',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'PostgreSQL',
     },
     {
       name: 'MongoDB',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'MongoDB',
     },
   ],
@@ -268,36 +228,26 @@ const skillsData = {
     {
       name: 'Mocha',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg',
-      width: 50,
-      height: 50,
       alt: 'Mocha',
     },
     {
       name: 'Jest',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
-      width: 50,
-      height: 50,
       alt: 'Jest',
     },
     {
       name: 'Storybook',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg',
-      width: 50,
-      height: 50,
       alt: 'Storybook',
     },
     {
       name: 'Cypress',
-      src: { CypressLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/Cypress_Logo.png',
       alt: 'Cypress',
     },
     {
       name: 'Rspec',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'Rspec',
     },
   ],
@@ -305,36 +255,26 @@ const skillsData = {
     {
       name: 'Figma',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
-      width: 50,
-      height: 50,
       alt: 'Figma',
     },
     {
       name: 'VSCode',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
-      width: 50,
-      height: 50,
       alt: 'VSCode',
     },
     {
       name: 'Git',
-      src: { GitLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/git-icon.png',
       alt: 'Git',
     },
     {
       name: 'Postman',
-      src: { PostmanLogo },
-      width: 50,
-      height: 50,
+      src: '/assets/skills/postman-icon.png',
       alt: 'Postman',
     },
     {
       name: 'Photoshop',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg',
-      width: 50,
-      height: 50,
       alt: 'Photoshop',
     },
   ],
@@ -345,4 +285,5 @@ module.exports = {
   ExperienceSections,
   ProjectData,
   navLinks,
+  skillsData,
 };
