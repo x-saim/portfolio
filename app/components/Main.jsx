@@ -63,20 +63,6 @@ const Main = () => {
             </Link>
           </div>
         </div>
-
-        {/* Mail Link Container*/}
-        {/* <button
-          className='uppercase max-w-[600px] bg-gray-600 text-white
-         rounded-full px-3 py-1 text-md leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-widest font-semibold flex hover:scale-110'
-        >
-          View Resume
-          <a href='/#' className='font-semibold'>
-            <span aria-hidden='true'>
-              <AiOutlineDownload className='mt-1' />
-            </span>
-          </a>
-          <div></div>
-        </button> */}
       </div>
     </div>
   );

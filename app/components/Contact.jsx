@@ -61,32 +61,6 @@ const Contact = () => {
     return true;
   };
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       'saimxamir@gmail.com',
-  //       'email_ybold4a',
-  //       e.target,
-  //       'wABNLMP1yPyQ_IEY-'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setMessageSent(true);
-
-  //         // Automatically hide the alert after 5 seconds (5000 milliseconds)
-  //         setTimeout(() => {
-  //           setMessageSent(false);
-  //         }, 5000);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
   return (
     <div id='contact' className='isolate  px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl text-center'>

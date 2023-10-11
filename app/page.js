@@ -5,6 +5,7 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/Contact';
 import ViewMode from './components/viewMode';
+import NavTop from './components/NavTop';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <ViewMode />
+      <NavTop />
     </main>
   );
 }
