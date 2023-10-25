@@ -50,8 +50,14 @@ const About = () => {
           </p>
         </div>
         <div>
-          <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-            <Image src={AboutImg} className='rounded-xl' alt='/' />
+          <div className='w-full h-auto m-auto rounded-xl flex items-center justify-center p-1 hover:scale-105 ease-in duration-300'>
+            <Image
+              src={AboutImg}
+              className='rounded-xl'
+              alt='/'
+              width={400}
+              height={600}
+            />
           </div>
         </div>
       </div>
