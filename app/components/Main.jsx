@@ -22,7 +22,7 @@ const Main = () => {
             Hi, I&apos;m <span className='text-[#AD954C] '>Saim</span>
           </h1>
           <h1 className='py-4 text-gray-700 dark:text-gray-50'>
-            A Full-Stack Web Developer
+            A Full-Stack Software Developer
           </h1>
           <p className='py-3 text-gray-600 dark:text-gray-50 max-w-[70%] m-auto text-lg font-medium'>
             Combining my engineering expertise with web and software development

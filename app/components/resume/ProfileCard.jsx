@@ -23,7 +23,7 @@ const ProfileCard = () => {
         <div className='my-2 space-y-1'>
           <h2 className='text-xl font-semibold sm:text-2xl'>Saim Amir</h2>
           <p className='px-5 text-xs sm:text-base dark:text-gray-400'>
-            Full-Stack Developer | Civil E.I.T
+            Full-Stack Software Developer | E.I.T
           </p>
         </div>
         <div className='flex justify-center pt-2 space-x-4 align-center'>

@@ -13,12 +13,16 @@ const About = () => {
             About Me
           </h2>
           <p className='mt-4'>
-            Hi there! 👋 I&apos;m Saim Amir, and I bring a unique blend of
-            professional engineering and management experience to the world of
-            Full-Stack Web Development. With over 3+ years in the field of Civil
-            Engineering, I&apos;ve honed my skills in problem-solving, project
-            management, and innovation. Now, I&apos;m on an exciting journey to
-            become a versatile Full-Stack Web Developer.
+            Hi there! 👋 I&apos;m Saim, a software developer with a unique
+            background combing software development, civil engineering, and
+            project management. After spending over 3 years in the civil
+            engineering industry, getting really good at problem-solving and
+            managing diverse projects, I made the leap to Full-Stack Software
+            Development in 2023 to pursue my passion for all things tech. I
+            thrive on diving into new challenges and keeping up-to-date with the
+            latest in technology. My drive comes from making cool stuff and
+            solving real-world problems. Let's collaborate and create something
+            amazing together!
           </p>
 
           <h3 className='uppercase py-4 mt-4'>
@@ -34,9 +38,9 @@ const About = () => {
 
           <h3 className='uppercase py-4 mt-4'> Seeking New Horizons 🌅</h3>
           <p>
-            While I explore the vast landscape of web development, I&apos;m also
-            fascinated by the intersection of civil engineering and software
-            development. This niche market holds immense potential for
+            While I explore the vast landscape of software development, I&apos;m
+            also fascinated by the intersection of civil engineering and
+            software development. This niche market holds immense potential for
             innovation, and I&apos;m excited to apply my cross-domain knowledge
             and experience in this dynamic field.
           </p>
@@ -46,7 +50,7 @@ const About = () => {
             opportunities where I can make a meaningful impact. Whether
             it&apos;s collaborating on exciting projects or contributing to the
             growth of your team, I&apos;m ready to embark on this journey
-            together.
+            together. Let's connect!
           </p>
         </div>
         <div>

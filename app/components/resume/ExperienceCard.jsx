@@ -13,7 +13,7 @@ const ExperienceCard = () => {
           {Object.entries(ExperienceSections).map(([subExp, subSection]) => (
             <div key={subExp} className='mb-5 flex mt-5'>
               <div className='pr-5'>
-                <Link href='https://www.engineeringlink.ca/'>
+                <Link href=''>
                   {' '}
                   <Image
                     src={subSection.logo}

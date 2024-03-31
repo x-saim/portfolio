@@ -7,6 +7,8 @@ import ProfileCard from '../components/resume/ProfileCard';
 import ExperienceCard from '../components/resume/ExperienceCard';
 import ProjectCard from '../components/resume/ProjectCard';
 import ViewMode from '../components/viewMode';
+import InfoBlock from '../components/resume/InfoBlock';
+import Education from '../components/resume/Education';
 
 const Resume = () => {
   return (
@@ -33,35 +35,12 @@ const Resume = () => {
               {/* User Block */}
               <ProfileCard />
 
+              {/* Education Block */}
+              <Education />
+
               {/* Info Block */}
-              <div className='p-7 bg-white dark:bg-gray-900  dark:text-gray-50 rounded-xl shadow-md'>
-                <h3 className='uppercase tracking-widest text-center text-2xl font-bold dark:text-white'>
-                  Information
-                </h3>
-                <div className='space-y-4 mt-4 text-gray-600 dark:text-gray-50'>
-                  <div className='flex justify-between'>
-                    <div>Location</div>
-                    <div className='font-medium text-right'>
-                      Greater Toronto Area (GTA)
-                    </div>
-                  </div>
-                  <div className='flex justify-between'>
-                    <div>Experience</div>
-                    <div className='font-medium text-right '>3+ years</div>
-                  </div>
-                  <div className='flex justify-between'>
-                    <div>Availability</div>
-                    <div className='font-medium text-right '>1 week</div>
-                  </div>
-                  <div className='flex justify-between'>
-                    <div>Relocation</div>
-                    <div className='font-medium text-right '>Yes</div>
-                  </div>
-                </div>
-              </div>
 
               {/* Skills Block */}
-
               <ResumeSkills />
             </div>
 
@@ -73,14 +52,15 @@ const Resume = () => {
                   About me
                 </h3>
                 <p className='text-gray-600 dark:text-white mb-1 py-2'>
-                  Experienced civil engineer-in-training with over 3 years of
-                  experience, now looking to transition into full-stack web
-                  development.
+                  Enthusiastic Software Developer with a unique background
+                  encompassing both software development and civil engineering,
+                  accumulating over 3 years of professional experience.
                 </p>
                 <p className='text-gray-600 dark:text-white mb-1 py-2'>
-                  Proficient in JavaScript, React, Node.js, Express.js, SQL, and
-                  various other technologies. I combine my engineering expertise
-                  with web development skills to deliver innovative solutions.
+                  Proficient in JavaScript, React, Node.js, Express.js, C#,
+                  .NET, SQL, and various other technologies. I combine my
+                  engineering expertise with software development skills to
+                  deliver innovative solutions.
                 </p>
                 <p className='text-gray-600 dark:text-white mb-5'>
                   I am a meticulous problem solver, approaching challenges with
@@ -118,11 +98,10 @@ const Resume = () => {
                   </ul>
                 </div>
               </div>
-
-              {/* Projects Block */}
-              <ProjectCard />
               {/* Experience Block */}
               <ExperienceCard />
+              {/* Projects Block */}
+              <ProjectCard />
             </div>
           </div>
         </main>

@@ -19,8 +19,8 @@ const Skills = () => {
           </span>
         </div>
         <p className='py-4'>
-          The main area of my expertise is full-stack development - tackling
-          both client and server side technologies.
+          The main area of my expertise is full-stack web and software
+          development - tackling both client and server side technologies.
         </p>
         <SkillsSection />
       </div>
