@@ -21,8 +21,8 @@ const About = () => {
             Development in 2023 to pursue my passion for all things tech. I
             thrive on diving into new challenges and keeping up-to-date with the
             latest in technology. My drive comes from making cool stuff and
-            solving real-world problems. Let's collaborate and create something
-            amazing together!
+            solving real-world problems. Let&apos;s collaborate and create
+            something amazing together!
           </p>
 
           <h3 className='uppercase py-4 mt-4'>
@@ -50,7 +50,7 @@ const About = () => {
             opportunities where I can make a meaningful impact. Whether
             it&apos;s collaborating on exciting projects or contributing to the
             growth of your team, I&apos;m ready to embark on this journey
-            together. Let's connect!
+            together. Let&apos;s connect!
           </p>
         </div>
         <div>
