@@ -147,10 +147,6 @@ const navLinks = [
     hash: '#projects',
   },
   {
-    name: 'Resume',
-    hash: 'resume',
-  },
-  {
     name: 'Contact',
     hash: '#contact',
   },
@@ -173,13 +169,13 @@ const skillsData = {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
       alt: 'Python',
     },
-    // {
-    //   name: 'TypeScript',
-    //   src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    //   width: 50,
-    //   height: 50,
-    //   alt: 'TypeScript',
-    // },
+    {
+      name: 'TypeScript',
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      width: 50,
+      height: 50,
+      alt: 'TypeScript',
+    },
     {
       name: 'Ruby',
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg',

@@ -60,7 +60,7 @@ const Navbar = () => {
       <header className='z-[999] relative'>
         <div>
           <motion.div
-            className='fixed top-6 left-1/2 h-[3.25rem] border border-white border-opacity-40 bg-gray-100 bg-opacity-80 shadow-lg  shadow-gray-400 backdrop-blur-[0.5rem] w-[40rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hidden md:flex'
+            className='fixed top-6 left-1/2 h-[3.25rem] border border-white border-opacity-40 bg-gray-100 bg-opacity-80 shadow-lg  shadow-gray-400 backdrop-blur-[0.5rem] w-[31rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 hidden md:flex'
             initial={{ y: -100, x: '-50%', opacity: 0 }}
             animate={{ y: 0, x: '-50%', opacity: 1 }}
           ></motion.div>
@@ -121,11 +121,6 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            {/* <Link href='/resume'>
-              <li className='py-3' onClick={handleNav}>
-                Resume
-              </li>
-            </Link> */}
             <Link href='/#contact'>
               <li className='py-3' onClick={handleNav}>
                 Contact
