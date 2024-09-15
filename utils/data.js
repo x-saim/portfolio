@@ -2,7 +2,7 @@ const TechnicalSkills = {
   'Programming Languages': [
     'C#',
     'JavaScript',
-    // 'TypeScript',
+    'TypeScript',
     'Python',
     'Ruby',
     'HTML',

@@ -121,11 +121,11 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link href='/resume'>
+            {/* <Link href='/resume'>
               <li className='py-3' onClick={handleNav}>
                 Resume
               </li>
-            </Link>
+            </Link> */}
             <Link href='/#contact'>
               <li className='py-3' onClick={handleNav}>
                 Contact
