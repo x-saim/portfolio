@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { BsSun, BsMoon } from 'react-icons/bs';
 
 const ViewMode = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   // Handler to toggle theme
   const themeToggle = () => {
