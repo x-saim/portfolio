@@ -37,7 +37,7 @@ const MobileNav = ({ navOpen, handleNav }) => (
 
       <div className='pt-10'>
         <p className='text-black dark:text-white text-xl font-bold mb-6'>
-          Let's Connect
+          Let&apos;s Connect
         </p>
 
         <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>

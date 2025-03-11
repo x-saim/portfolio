@@ -20,7 +20,7 @@ const About = () => {
           {/* Introduction Card */}
           <div className='rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg shadow-gray-400 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1'>
             <p className='text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-50'>
-              Hi there! 👋 I'm Saim, a Full-Stack Software Developer with expertise in modern web technologies 
+              Hi there! 👋 I&apos;m Saim, a Full-Stack Software Developer with expertise in modern web technologies 
               and a unique background in engineering. With hands-on experience in both AR development and web applications, 
               I bring a diverse skill set spanning TypeScript, React, C#, and Unity development. My journey from civil 
               engineering to software development has equipped me with exceptional problem-solving abilities and a 
@@ -39,7 +39,7 @@ const About = () => {
               <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
                 I specialize in full-stack development using technologies like TypeScript, React, Node.js, and .NET. 
                 My recent work includes developing AR training applications with Unity and Meta XR, optimizing Shopify 
-                plugins, and creating efficient AutoCAD automation tools. I'm passionate about writing clean, 
+                plugins, and creating efficient AutoCAD automation tools. I&apos;m passionate about writing clean, 
                 performant code and implementing comprehensive testing strategies to ensure reliable applications.
               </p>
             </div>
@@ -52,7 +52,7 @@ const About = () => {
               </h3>
               <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
                 My engineering background provides a unique perspective in software development, especially in 
-                technical problem-solving and project management. I've successfully led multiple projects from 
+                technical problem-solving and project management. I&apos;ve successfully led multiple projects from 
                 conception to deployment, working closely with clients to deliver solutions that exceed expectations. 
                 My experience includes optimizing application performance, implementing robust testing processes, 
                 and creating detailed technical documentation.
@@ -68,9 +68,9 @@ const About = () => {
             </h3>
             <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
               I'm actively seeking full-stack development opportunities where I can leverage my technical skills 
-              and cross-domain expertise. Whether it's building innovative web applications, developing AR solutions, 
-              or creating automation tools, I'm ready to contribute to challenging projects and collaborate with 
-              forward-thinking teams. Let's connect and discuss how we can create impactful solutions together!
+              and cross-domain expertise. Whether it&apos;s building innovative web applications, developing AR solutions, 
+              or creating automation tools, I&apos;m ready to contribute to challenging projects and collaborate with 
+              forward-thinking teams. Let&apos;s connect and discuss how we can create impactful solutions together!
             </p>
           </div>
         </div>
