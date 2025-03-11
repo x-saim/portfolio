@@ -53,7 +53,7 @@ const Main = () => {
   ];
 
   return (
-    <main id='home' className='w-full h-screen text-center bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900'>
+    <main id='home' className='w-full h-screen text-center'>
       {/* Main Container*/}
       <div className='max-w-[1240px] w-full h-full mx-auto p-4 md:p-8 flex flex-col justify-center items-center'>
         <motion.div

@@ -6,7 +6,7 @@ import { projects, projectsDescription } from './projectData';
 
 const Projects = () => {
   return (
-    <section id='projects' className='w-full min-h-screen bg-white dark:bg-black py-20'>
+    <section id='projects' className='w-full min-h-screen py-20'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <ProjectDescription 
           title={projectsDescription.title}

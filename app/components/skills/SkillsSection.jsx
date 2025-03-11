@@ -1,25 +1,22 @@
 import React from 'react';
 import { skillsData } from 'utils/data.js';
-import Image from 'next/image';
+
+const SkillCard = ({ skill }) => (
+  <div className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'>
+    <div className='text-lg font-semibold text-black dark:text-white'>{skill.name}</div>
+  </div>
+);
 
 const SkillsSection = () => (
-  <div className='uppercase py-2 text-center'>
-    <br />
-    {Object.entries(skillsData).map(([subCategory, subSkills]) => (
-      <div key={subCategory} className='text-center'>
-        <p className='mt-5 m-auto bg-[white] dark:bg-gray-500 border-2 dark:text-white font-semibold border-black rounded-xl text-l py-2 '>
-          {subCategory}
-        </p>
-        <div className='flex flex-wrap justify-center'>
-          {subSkills.map((skill, index) => (
-            <div
-              key={index}
-              className='p-2 rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center'
-            >
-              <div>
-                <Image src={skill.src} width={60} height={60} alt={skill.alt} />
-              </div>
-            </div>
+  <div className='space-y-16'>
+    {Object.entries(skillsData).map(([category, skills]) => (
+      <div key={category}>
+        <h3 className='text-sm font-medium text-gray-500 dark:text-gray-400 mb-6'>
+          {category}
+        </h3>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+          {skills.map((skill, index) => (
+            <SkillCard key={skill.name} skill={skill} />
           ))}
         </div>
       </div>

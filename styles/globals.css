@@ -37,6 +37,6 @@
   }
 
   button {
-    @apply shadow-xl  shadow-gray-400 rounded-xl bg-gradient-to-r from-[#FCDC5A] to-[#383014] text-white;
+    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#FCDC5A] to-[#383014] text-white;
   }
 }

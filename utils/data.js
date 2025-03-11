@@ -109,194 +109,31 @@ const navLinks = [
   },
 ];
 
-const skillsData = {
-  'Programming Languages': [
-    {
-      name: 'C#',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
-      alt: 'CSharp',
-    },
-    {
-      name: 'JavaScript',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-      alt: 'JavaScript',
-    },
-    {
-      name: 'Python',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
-      alt: 'Python',
-    },
-    {
-      name: 'TypeScript',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-      width: 50,
-      height: 50,
-      alt: 'TypeScript',
-    },
-    {
-      name: 'Ruby',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg',
-      alt: 'Ruby',
-    },
-    {
-      name: 'HTML5',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg',
-      alt: 'HTML5',
-    },
-    {
-      name: 'CSS3',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg',
-      alt: 'CSS3',
-    },
-    {
-      name: 'Sass',
-      src: '/assets/skills/sass-icon.png',
-      alt: 'Sass',
-    },
-    {
-      name: 'SQL',
-      src: '/assets/skills/database.png',
-      alt: 'SQL',
-    },
+export const skillsData = {
+  'Frontend Development': [
+    { name: 'React', level: 90 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'TypeScript', level: 80 },
+    { name: 'HTML/CSS', level: 90 },
+    { name: 'Tailwind CSS', level: 85 },
+    { name: 'Next.js', level: 85 }
   ],
-  'Frameworks & Libraries': [
-    {
-      name: '.NET',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg',
-      alt: 'NET',
-    },
-    {
-      name: 'Node.js',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
-      alt: 'Node.js',
-    },
-    {
-      name: 'Express.js',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg',
-      alt: 'Express.js',
-    },
-    {
-      name: 'React',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
-      alt: 'React',
-    },
-    {
-      name: 'React',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
-      alt: 'Next',
-    },
-    {
-      name: 'Redux',
-      src: '/assets/skills/redux-icon.png',
-      alt: 'Redux',
-    },
-    {
-      name: 'jQuery',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
-      alt: 'jQuery',
-    },
-    {
-      name: 'Ruby on Rails',
-      src: '/assets/skills/Ruby_On_Rails_Logo.svg.png',
-      alt: 'Rails',
-    },
+  'Backend Development': [
+    { name: 'Node.js', level: 85 },
+    { name: 'Python', level: 80 },
+    { name: 'PostgreSQL', level: 75 },
+    { name: 'MongoDB', level: 75 },
+    { name: 'Express', level: 80 },
+    { name: 'REST APIs', level: 85 }
   ],
-  'Database Management': [
-    {
-      name: 'PostgreSQL',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg',
-      alt: 'PostgreSQL',
-    },
-    {
-      name: 'MongoDB',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg',
-      alt: 'MongoDB',
-    },
-  ],
-  Testing: [
-    {
-      name: 'Mocha',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg',
-      alt: 'Mocha',
-    },
-    {
-      name: 'Jest',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
-      alt: 'Jest',
-    },
-    {
-      name: 'Storybook',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg',
-      alt: 'Storybook',
-    },
-    {
-      name: 'Cypress',
-      src: '/assets/skills/Cypress_Logo.png',
-      alt: 'Cypress',
-    },
-    {
-      name: 'Rspec',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original-wordmark.svg',
-      alt: 'Rspec',
-    },
-  ],
-  'Development/Other Tools': [
-    {
-      name: 'Figma',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
-      alt: 'Figma',
-    },
-    {
-      name: 'VSCode',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
-      alt: 'VSCode',
-    },
-    {
-      name: 'Git',
-      src: '/assets/skills/git-icon.png',
-      alt: 'Git',
-    },
-    {
-      name: 'Postman',
-      src: '/assets/skills/postman-icon.png',
-      alt: 'Postman',
-    },
-    {
-      name: 'Photoshop',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg',
-      alt: 'Photoshop',
-    },
-    {
-      name: 'Linux',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',
-      alt: 'Linux',
-    },
-    {
-      name: 'Vercel',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg',
-      alt: 'Vercel',
-    },
-    {
-      name: 'Jira',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg',
-      alt: 'Jira',
-    },
-    {
-      name: 'SourceTree',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sourcetree/sourcetree-original-wordmark.svg',
-      alt: 'SourceTree',
-    },
-    {
-      name: 'BitBucket',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original-wordmark.svg',
-      alt: 'BitBucket',
-    },
-    {
-      name: 'WordPress',
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg',
-      alt: 'WordPress',
-    },
-  ],
+  'Development Tools': [
+    { name: 'Git', level: 85 },
+    { name: 'Docker', level: 75 },
+    { name: 'AWS', level: 70 },
+    { name: 'Linux', level: 80 },
+    { name: 'VS Code', level: 90 },
+    { name: 'Jest', level: 75 }
+  ]
 };
 
 module.exports = {

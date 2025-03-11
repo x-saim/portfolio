@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='isolate  px-6 py-24 sm:py-32 lg:px-8'>
+    <div id='contact' className='isolate px-6 py-24 sm:py-32 lg:px-8'>
       <div className='mx-auto max-w-2xl text-center'>
         <h2 className='text-3xl font-bold tracking-tight text-[#AD954C] dark:text-gray-50 sm:text-4xl'>
           Contact Me!

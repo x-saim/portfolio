@@ -12,12 +12,21 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Main />
-      <About />
-      <Skills />
-      <Projects />
-      {/* <Experience /> */}
-      <Contact />
+      <div className="bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-gray-900">
+        <Main />
+      </div>
+      <div className="bg-gradient-to-bl from-gray-50 to-white dark:from-gray-900 dark:to-black">
+        <About />
+      </div>
+      <div className="bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-gray-900">
+        <Skills />
+      </div>
+      <div className="bg-gradient-to-bl from-gray-50 to-white dark:from-gray-900 dark:to-black">
+        <Projects />
+      </div>
+      <div className="bg-gradient-to-br from-white to-gray-50 dark:from-black dark:to-gray-900">
+        <Contact />
+      </div>
       <Footer />
       <ViewMode />
       <NavTop />
