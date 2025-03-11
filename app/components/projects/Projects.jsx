@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import BizConnectImage from 'public/assets/projects/BizConnect.png';
 import TweeterGif from 'public/assets/projects/Tweeter.gif';
 import SchedulerGif from 'public/assets/projects/Scheduler.gif';
@@ -8,61 +10,114 @@ import CodeLogo from 'public/assets/skills/div-coding-icon.png';
 import Image from 'next/image';
 
 const Projects = () => {
+  const projects = [
+    {
+      title: 'BizConnect',
+      description: 'A full-stack professional social network',
+      tech: ['Node.js', 'Express', 'React', 'Redux', 'MongoDB'],
+      image: BizConnectImage,
+      url: 'https://github.com/x-saim/bizconnect',
+      category: 'Full Stack'
+    },
+    {
+      title: 'Scheduler',
+      description: 'Interview scheduling single-page application',
+      tech: ['JavaScript', 'React', 'Axios'],
+      image: SchedulerGif,
+      url: 'https://github.com/x-saim/scheduler',
+      category: 'Frontend'
+    },
+    {
+      title: 'Tweeter',
+      description: 'A Single Page App (SPA) built with HTML, CSS, JS, jQuery, and AJAX.',
+      tech: ['HTML', 'CSS', 'JS', 'jQuery', 'AJAX'],
+      image: TweeterGif,
+      url: 'https://github.com/x-saim/tweeter',
+      category: 'Frontend'
+    },
+    {
+      title: 'TinyApp',
+      description: 'A full stack web application built with Node, Express, and EJS that allows users to shorten long URLs (à la bit.ly).',
+      tech: ['Node', 'Express', 'EJS'],
+      image: TinyURLImage,
+      url: 'https://github.com/x-saim/tinyapp',
+      category: 'Full Stack'
+    }
+  ];
+
   return (
-    <div id='projects' className='w-full h-full-screen sm:pt-24 md:pt-24 '>
-      <div className='max-w-[1920px] mx-auto px-6 py-10 justify-center'>
-        <div className='flex justify-center items-center'>
-          <span>
-            <Image src={CodeLogo} width={50} height={50} alt='Tag' />
-          </span>
-          <h2 className='uppercase ml-4 mr-4 tracking-widest text-[#AD954C] text-center'>
-            Project Work
+    <section id='projects' className='w-full min-h-screen bg-white dark:bg-black py-20'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className='text-center mb-16'
+        >
+          <h2 className='text-3xl md:text-4xl font-bold text-black dark:text-white mb-4'>
+            Featured Projects
           </h2>
-          <span>
-            <Image src={CodeLogo} width={50} height={50} alt='Tag' />
-          </span>
-        </div>
-        <p className='p-2 text-gray-800 dark:text-gray-50'>
-          Welcome to my web portfolio, where I present a collection of
-          applications that highlight my expertise in both full-stack and
-          front-end development.
-        </p>
-        <p className='p-2 text-gray-800 dark:text-gray-50'>
-          These projects seamlessly blend technology and creativity, utilizing
-          tools like Node.js, Express, React, Redux, MongoDB, JavaScript, Axios,
-          HTML, CSS, jQuery, and AJAX. From a global professional network to a
-          streamlined interview scheduler and real-time social interaction app,
-          explore my diverse skill set and experience my commitment to crafting
-          exceptional user experiences.
-        </p>
-        <div className='grid md:grid-cols-2 gap-8 py-5'>
-          <ProjectItem
-            title='BizConnect'
-            backgroundImg={BizConnectImage}
-            projectUrl='https://github.com/x-saim/bizconnect'
-            tech='BizConnect is a full-stack professional social network developed using Node.js, Express, React, Redux, and MongoDB. '
-          />
-          <ProjectItem
-            title='Scheduler'
-            backgroundImg={SchedulerGif}
-            projectUrl='https://github.com/x-saim/scheduler'
-            tech='Interview Scheduler is a single-page application (SPA) built using JavaScript, React, and Axios that allows users to book technical interviews between students and mentors.'
-          />
-          <ProjectItem
-            title='Tweeter'
-            backgroundImg={TweeterGif}
-            projectUrl='https://github.com/x-saim/tweeter'
-            tech='Tweeter is a Single Page App (SPA) built with HTML, CSS, JS, jQuery, and AJAX.'
-          />
-          <ProjectItem
-            title='TinyApp'
-            backgroundImg={TinyURLImage}
-            projectUrl='https://github.com/x-saim/tinyapp'
-            tech='TinyApp is a full stack web application built with Node, Express, and EJS that allows users to shorten long URLs (à la bit.ly).'
-          />
+          <p className='text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg'>
+            Exploring the intersection of technology and creativity through carefully crafted web applications.
+          </p>
+        </motion.div>
+
+        <div className='space-y-24'>
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className={`flex flex-col ${
+                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+              } gap-8 items-center`}
+            >
+              <div className='w-full md:w-1/2 relative group'>
+                <div className='relative overflow-hidden rounded-xl shadow-2xl'>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className='w-full h-auto transform transition-transform duration-500 group-hover:scale-105'
+                  />
+                  <div className='absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
+                    <a
+                      href={project.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors'
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='w-full md:w-1/2 space-y-4'>
+                <span className='text-sm font-medium text-[#AD954C] uppercase tracking-wider'>
+                  {project.category}
+                </span>
+                <h3 className='text-2xl font-bold text-black dark:text-white'>
+                  {project.title}
+                </h3>
+                <p className='text-gray-600 dark:text-gray-300'>
+                  {project.description}
+                </p>
+                <div className='flex flex-wrap gap-2'>
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className='px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full'
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
