@@ -67,7 +67,7 @@ const About = () => {
               <span className='text-xl sm:text-2xl'>🚀</span>
             </h3>
             <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
-              I'm actively seeking full-stack development opportunities where I can leverage my technical skills 
+              I&apos;m actively seeking full-stack development opportunities where I can leverage my technical skills 
               and cross-domain expertise. Whether it&apos;s building innovative web applications, developing AR solutions, 
               or creating automation tools, I&apos;m ready to contribute to challenging projects and collaborate with 
               forward-thinking teams. Let&apos;s connect and discuss how we can create impactful solutions together!
