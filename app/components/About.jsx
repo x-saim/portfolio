@@ -9,7 +9,7 @@ const About = () => {
       <div className='max-w-[1240px] mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-32'>
         {/* Header Section */}
         <div className='text-center mb-8 sm:mb-16 animate-fade-in'>
-          <h2 className='uppercase tracking-widest text-[#AD954C] text-lg sm:text-xl font-semibold mb-4 hover:text-[#8B7A3F] transition-colors duration-300'>
+          <h2 className='uppercase tracking-widest text-gray-800 dark:text-white text-lg sm:text-xl font-semibold mb-4 hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300'>
             About Me
           </h2>
           <div className='w-16 sm:w-24 h-1 bg-[#AD954C] mx-auto rounded-full transform hover:scale-110 transition-transform duration-300'></div>

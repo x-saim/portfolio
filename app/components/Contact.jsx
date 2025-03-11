@@ -1,42 +1,54 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import emailjs from '@emailjs/browser';
+import { contactFormFields } from '../config/contactFormFields';
+import FormField from './FormField';
 
 const Contact = () => {
-  const [isMessageSent, setMessageSent] = useState(false);
+  const [formState, setFormState] = useState({
+    isLoading: false,
+    isMessageSent: false,
+    error: null
+  });
+  const [formData, setFormData] = useState({});
 
-  const sendEmail = (e) => {
+  const handleInputChange = useCallback((e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  }, []);
+
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setFormState(prev => ({ ...prev, isLoading: true, error: null }));
 
-    if (validateForm(e.target)) {
-      emailjs
-        .sendForm(
-          'saimxamir@gmail.com',
-          'email_ybold4a',
+    try {
+      if (validateForm(formData)) {
+        await emailjs.sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
           e.target,
-          'wABNLMP1yPyQ_IEY-'
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setMessageSent(true);
-
-            // Automatically hide the alert after 5 seconds (5000 milliseconds)
-            setTimeout(() => {
-              setMessageSent(false);
-            }, 5000);
-          },
-          (error) => {
-            console.log(error.text);
-          }
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         );
+        
+        setFormState(prev => ({ ...prev, isMessageSent: true }));
+        setTimeout(() => {
+          setFormState(prev => ({ ...prev, isMessageSent: false }));
+        }, 5000);
+      }
+    } catch (error) {
+      setFormState(prev => ({ ...prev, error: 'Failed to send message. Please try again.' }));
+    } finally {
+      setFormState(prev => ({ ...prev, isLoading: false }));
     }
   };
 
-  const validateForm = (form) => {
+  const validateForm = (formData) => {
     const requiredFields = [
       'first-name',
       'last-name',
@@ -46,14 +58,11 @@ const Contact = () => {
     ];
 
     for (const field of requiredFields) {
-      const input = form[field];
-      if (!input.value) {
-        alert(
-          `Please fill in the "${field.replace(
-            '-',
-            ' '
-          )}" field before sending the message.`
-        );
+      if (!formData[field]) {
+        setFormState(prev => ({
+          ...prev,
+          error: `Please fill in the "${field.replace('-', ' ')}" field.`
+        }));
         return false;
       }
     }
@@ -74,7 +83,7 @@ const Contact = () => {
       </div>
 
       {/* Show message confirmation and hide it after a few seconds */}
-      {isMessageSent ? (
+      {formState.isMessageSent ? (
         <div className='mx-auto mt-6 max-w-xl'>
           <p className='text-green-600 text-center font-semibold'>
             Message Sent Successfully!
@@ -88,78 +97,14 @@ const Contact = () => {
           className='mx-auto mt-16 max-w-xl sm:mt-20'
         >
           <div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
-            <div>
-              <label
-                htmlFor='first-name'
-                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
-              >
-                First name
-              </label>
-              <div className='mt-2.5'>
-                <input
-                  type='text'
-                  name='first-name'
-                  id='first-name'
-                  placeholder='First Name'
-                  autoComplete='given-name'
-                  className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor='last-name'
-                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
-              >
-                Last name
-              </label>
-              <div className='mt-2.5'>
-                <input
-                  type='text'
-                  name='last-name'
-                  id='last-name'
-                  placeholder='Last Name'
-                  autoComplete='family-name'
-                  className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
-                />
-              </div>
-            </div>
-            <div className='sm:col-span-2'>
-              <label
-                htmlFor='subject'
-                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
-              >
-                Subject
-              </label>
-              <div className='mt-2.5'>
-                <input
-                  type='text'
-                  name='subject'
-                  id='subject'
-                  placeholder='Subject'
-                  autoComplete='subject'
-                  className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
-                />
-              </div>
-            </div>
-            <div className='sm:col-span-2'>
-              <label
-                htmlFor='email'
-                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
-              >
-                Email
-              </label>
-              <div className='mt-2.5'>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  placeholder='Please enter email address'
-                  autoComplete='email'
-                  className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
-                />
-              </div>
-            </div>
+            {contactFormFields.map((field) => (
+              <FormField
+                key={field.id}
+                field={field}
+                value={formData[field.id] || ''}
+                onChange={handleInputChange}
+              />
+            ))}
             <div className='sm:col-span-2'>
               <label
                 htmlFor='phone-number'
@@ -196,42 +141,23 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className='sm:col-span-2'>
-              <label
-                htmlFor='message'
-                className='block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50'
-              >
-                Message
-              </label>
-              <div className='mt-2.5'>
-                <textarea
-                  name='message'
-                  id='message'
-                  placeholder='Please enter your message here...'
-                  rows={4}
-                  className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
-                  defaultValue={''}
-                />
-              </div>
-            </div>
           </div>
           <div className='mt-10'>
             <button
               type='submit'
-              className='block w-full rounded-xl bg-[#AD954C] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+              disabled={formState.isLoading}
+              className='block w-full rounded-md border border-white bg-black px-4 py-2.5 text-center text-sm font-semibold text-white transition-all duration-200 hover:bg-black hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] focus:ring-2 focus:ring-white focus:ring-offset-2 disabled:opacity-50'
             >
-              Send message!
+              {formState.isLoading ? 'Sending...' : 'Send Message'}
             </button>
+            {formState.error && (
+              <p className='mt-2 text-sm text-red-600 text-center'>
+                {formState.error}
+              </p>
+            )}
           </div>
         </form>
       )}
-      <div className='flex justify-center py-12'>
-        <Link href='/#home'>
-          <div className='rounded-full bg-slate-100 shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-            <HiOutlineChevronDoubleUp className='text-[#AD954C]' size={30} />
-          </div>
-        </Link>
-      </div>
     </div>
   );
 };

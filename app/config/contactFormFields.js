@@ -1,0 +1,41 @@
+export const contactFormFields = [
+  {
+    id: 'first-name',
+    label: 'First name',
+    type: 'text',
+    placeholder: 'First Name',
+    autoComplete: 'given-name',
+    gridSpan: 1,
+  },
+  {
+    id: 'last-name',
+    label: 'Last name',
+    type: 'text',
+    placeholder: 'Last Name',
+    autoComplete: 'family-name',
+    gridSpan: 1,
+  },
+  {
+    id: 'subject',
+    label: 'Subject',
+    type: 'text',
+    placeholder: 'Subject',
+    autoComplete: 'subject',
+    gridSpan: 2,
+  },
+  {
+    id: 'email',
+    label: 'Email',
+    type: 'email',
+    placeholder: 'Please enter email address',
+    autoComplete: 'email',
+    gridSpan: 2,
+  },
+  {
+    id: 'message',
+    label: 'Message',
+    type: 'textarea',
+    placeholder: 'Please enter your message here...',
+    gridSpan: 2,
+  },
+]; 
