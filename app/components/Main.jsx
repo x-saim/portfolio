@@ -1,14 +1,59 @@
 'use client';
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { AiOutlineMail } from 'react-icons/ai';
+// Lazy load icons
+const FaLinkedinIn = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaLinkedinIn })));
+const FaGithub = lazy(() => import('react-icons/fa').then(mod => ({ default: mod.FaGithub })));
+const BsFillPersonLinesFill = lazy(() => import('react-icons/bs').then(mod => ({ default: mod.BsFillPersonLinesFill })));
+const AiOutlineMail = lazy(() => import('react-icons/ai').then(mod => ({ default: mod.AiOutlineMail })));
+
+// Social link component for better organization and accessibility
+const SocialLink = ({ href, ariaLabel, icon: Icon }) => (
+  <Link
+    href={href}
+    target={href.startsWith('http') ? '_blank' : undefined}
+    rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+    aria-label={ariaLabel}
+  >
+    <motion.div 
+      className='rounded-full shadow-lg shadow-black/20 dark:shadow-white/10 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-black dark:text-white bg-white dark:bg-black'
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Suspense fallback={<div className="w-[25px] h-[25px]" />}>
+        <Icon size={25} />
+      </Suspense>
+    </motion.div>
+  </Link>
+);
 
 const Main = () => {
+  const socialLinks = [
+    {
+      href: 'https://www.linkedin.com/in/saimamir/',
+      ariaLabel: 'Visit my LinkedIn profile',
+      icon: FaLinkedinIn
+    },
+    {
+      href: 'https://github.com/x-saim',
+      ariaLabel: 'Visit my GitHub profile',
+      icon: FaGithub
+    },
+    {
+      href: '/#contact',
+      ariaLabel: 'Contact me',
+      icon: AiOutlineMail
+    },
+    {
+      href: '/#about',
+      ariaLabel: 'About me',
+      icon: BsFillPersonLinesFill
+    }
+  ];
+
   return (
-    <div id='home' className='w-full h-screen text-center bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900'>
+    <main id='home' className='w-full h-screen text-center bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900'>
       {/* Main Container*/}
       <div className='max-w-[1240px] w-full h-full mx-auto p-4 md:p-8 flex flex-col justify-center items-center'>
         <motion.div
@@ -43,47 +88,24 @@ const Main = () => {
             skills to deliver innovative solutions.
           </motion.p>
 
-          {/* Updated Icons Container with Grid */}
           <motion.div 
             className='grid grid-cols-2 md:flex md:items-center md:justify-between max-w-[330px] m-auto py-4 gap-4'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
           >
-            <Link
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://www.linkedin.com/in/saimamir/'
-            >
-              <div className='rounded-full shadow-lg shadow-black/20 dark:shadow-white/10 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-black dark:text-white bg-white dark:bg-black'>
-                <FaLinkedinIn size={25} />
-              </div>
-            </Link>
-            <Link
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://github.com/x-saim '
-            >
-              <div className='rounded-full shadow-lg shadow-black/20 dark:shadow-white/10 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-black dark:text-white bg-white dark:bg-black'>
-              <FaGithub size={25} />
-              </div>
-            </Link>
-
-            <Link href='/#contact'>
-            <div className='rounded-full shadow-lg shadow-black/20 dark:shadow-white/10 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-black dark:text-white bg-white dark:bg-black'>
-            <AiOutlineMail size={25} />
-              </div>
-            </Link>
-
-            <Link href='/#about'>
-            <div className='rounded-full shadow-lg shadow-black/20 dark:shadow-white/10 p-6 cursor-pointer hover:scale-105 ease-in duration-300 text-black dark:text-white bg-white dark:bg-black'>
-            <BsFillPersonLinesFill size={25} />
-              </div>
-            </Link>
+            {socialLinks.map((link, index) => (
+              <SocialLink
+                key={link.href}
+                href={link.href}
+                ariaLabel={link.ariaLabel}
+                icon={link.icon}
+              />
+            ))}
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </main>
   );
 };
 
