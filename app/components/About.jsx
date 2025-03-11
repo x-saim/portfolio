@@ -1,61 +1,77 @@
 import React from 'react';
 import Image from 'next/image';
-import AboutImg from '../../public/assets/AboutImg.jpg';
 const About = () => {
   return (
     <div
       id='about'
-      className='w-full lg:h-screen sm:pt-[125px] md:pt-24 p-10 flex items-center py-16'
+      className='w-full min-h-screen text-center pt-20 sm:pt-0'
     >
-      <div className='max-w-[1920px] m-auto md:grid grid-cols-3 gap-8'>
-        <div className='col-span-2'>
-          <h2 className='uppercase tracking-widest text-[#AD954C] text-center '>
+      <div className='max-w-[1240px] mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-32'>
+        {/* Header Section */}
+        <div className='text-center mb-8 sm:mb-16'>
+          <h2 className='uppercase tracking-widest text-[#AD954C] text-lg sm:text-xl font-semibold mb-4'>
             About Me
           </h2>
-          <p className='mt-4'>
-            Hi there! 👋 I'm Saim, a Full-Stack Software Developer with expertise in modern web technologies 
-            and a unique background in engineering. With hands-on experience in both AR development and web applications, 
-            I bring a diverse skill set spanning TypeScript, React, C#, and Unity development. My journey from civil 
-            engineering to software development has equipped me with exceptional problem-solving abilities and a 
-            detail-oriented approach that sets me apart in delivering robust technical solutions.
-          </p>
-
-          <h3 className='uppercase py-4 mt-4'>
-            Technical Expertise & Innovation 💻
-          </h3>
-          <p>
-            I specialize in full-stack development using technologies like TypeScript, React, Node.js, and .NET. 
-            My recent work includes developing AR training applications with Unity and Meta XR, optimizing Shopify 
-            plugins, and creating efficient AutoCAD automation tools. I'm passionate about writing clean, 
-            performant code and implementing comprehensive testing strategies to ensure reliable applications.
-          </p>
-
-          <h3 className='uppercase py-4 mt-4'>Engineering Meets Software Development 🔧</h3>
-          <p>
-            My engineering background provides a unique perspective in software development, especially in 
-            technical problem-solving and project management. I've successfully led multiple projects from 
-            conception to deployment, working closely with clients to deliver solutions that exceed expectations. 
-            My experience includes optimizing application performance, implementing robust testing processes, 
-            and creating detailed technical documentation.
-          </p>
-
-          <h3 className='uppercase py-4 mt-4'>Looking for New Opportunities 🚀</h3>
-          <p>
-            I'm actively seeking full-stack development opportunities where I can leverage my technical skills 
-            and cross-domain expertise. Whether it's building innovative web applications, developing AR solutions, 
-            or creating automation tools, I'm ready to contribute to challenging projects and collaborate with 
-            forward-thinking teams. Let's connect and discuss how we can create impactful solutions together!
-          </p>
+          <div className='w-16 sm:w-24 h-1 bg-[#AD954C] mx-auto rounded-full'></div>
         </div>
-        <div>
-          <div className='w-full h-auto m-auto rounded-xl flex items-center justify-center p-1 hover:scale-105 ease-in duration-300'>
-            <Image
-              src={AboutImg}
-              className='rounded-xl'
-              alt='/'
-              width={400}
-              height={600}
-            />
+
+        {/* Content Column */}
+        <div className='space-y-6 sm:space-y-8'>
+          {/* Introduction Card */}
+          <div className='rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg shadow-gray-400'>
+            <p className='text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-50'>
+              Hi there! 👋 I'm Saim, a Full-Stack Software Developer with expertise in modern web technologies 
+              and a unique background in engineering. With hands-on experience in both AR development and web applications, 
+              I bring a diverse skill set spanning TypeScript, React, C#, and Unity development. My journey from civil 
+              engineering to software development has equipped me with exceptional problem-solving abilities and a 
+              detail-oriented approach that sets me apart in delivering robust technical solutions.
+            </p>
+          </div>
+
+          {/* Info Sections */}
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8'>
+            {/* Technical Expertise Section */}
+            <div className='rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg shadow-gray-400'>
+              <h3 className='uppercase font-bold text-base sm:text-lg mb-3 sm:mb-4 flex items-center justify-center gap-2'>
+                <span>Technical Expertise</span>
+                <span className='text-xl sm:text-2xl'>💻</span>
+              </h3>
+              <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
+                I specialize in full-stack development using technologies like TypeScript, React, Node.js, and .NET. 
+                My recent work includes developing AR training applications with Unity and Meta XR, optimizing Shopify 
+                plugins, and creating efficient AutoCAD automation tools. I'm passionate about writing clean, 
+                performant code and implementing comprehensive testing strategies to ensure reliable applications.
+              </p>
+            </div>
+
+            {/* Engineering Meets Software Section */}
+            <div className='rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg shadow-gray-400'>
+              <h3 className='uppercase font-bold text-base sm:text-lg mb-3 sm:mb-4 flex items-center justify-center gap-2'>
+                <span>Engineering Meets Software</span>
+                <span className='text-xl sm:text-2xl'>🔧</span>
+              </h3>
+              <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
+                My engineering background provides a unique perspective in software development, especially in 
+                technical problem-solving and project management. I've successfully led multiple projects from 
+                conception to deployment, working closely with clients to deliver solutions that exceed expectations. 
+                My experience includes optimizing application performance, implementing robust testing processes, 
+                and creating detailed technical documentation.
+              </p>
+            </div>
+          </div>
+
+          {/* Opportunities Section */}
+          <div className='rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg shadow-gray-400'>
+            <h3 className='uppercase font-bold text-base sm:text-lg mb-3 sm:mb-4 flex items-center justify-center gap-2'>
+              <span>Looking for New Opportunities</span>
+              <span className='text-xl sm:text-2xl'>🚀</span>
+            </h3>
+            <p className='text-sm sm:text-base text-gray-700 dark:text-gray-50'>
+              I'm actively seeking full-stack development opportunities where I can leverage my technical skills 
+              and cross-domain expertise. Whether it's building innovative web applications, developing AR solutions, 
+              or creating automation tools, I'm ready to contribute to challenging projects and collaborate with 
+              forward-thinking teams. Let's connect and discuss how we can create impactful solutions together!
+            </p>
           </div>
         </div>
       </div>
